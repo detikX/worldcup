@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/ceki.css">
+</head>
+<body>
+
+    <div class="vertical-section">
+        <h1>Buku Catatan Piala Bola Dunia 2022</h1>
+      </div>
+      <div class="sticky-container">
+        <main>
+          <section>
+            <p>Piala Bola dunia 2022 Qatar bisa jadi akan menjadi panggung terakhir dari 2 GOAT(Greatest of All Time) dalam hampir 15 tahun terakhir. Mereka adalah Cristiano Ronaldo dan Lionel Messi, kedua pemain tersebut telah meraih banyak gelar baik individu maupun club, tetapi yang sama adalah sama-sama belum pernah mencicipi gelar piala bola dunia. Akankah saah satu diantara mereka akan memenangkan nya? Ataukah di penghujung karir nya, mereka pulang tanpa piala bergengsi tersebut? Mari kita saksikan</p>
+          </section>
+          <section>
+            <div class="image"><img src="img/player/cr7.png" alt=""></div>
+          </section>
+          <section>
+            <div class="image"><img src="img/player/messi.png" alt=""></div>
+          </section>
+        </main>
+      </div>
+      <div class="vertical-section">
+        Maskot Piaa Bola Dunia dari masa ke masa
+      </div>
+      <div class="sticky-container">
+        <main>
+          <section>
+            <h1>Beep</h1>
+          </section>
+          <section>
+            <h1>Boop</h1>
+          </section>
+          <section>
+            <h1>Boooom</h1>
+          </section>
+          <section>
+            <h1>The End</h1>
+          </section>
+        </main>
+      </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script>
+        /**
+* By Alvaro Trigo 
+* Follow me on Twitter: https://twitter.com/imac2
+*/
+(function(){
+    init();
+
+    var g_containerInViewport;
+    function init(){
+        setStickyContainersSize();
+        bindEvents();
+    }
+
+    function bindEvents(){
+        window.addEventListener("wheel", wheelHandler);        
+    }
+
+    function setStickyContainersSize(){
+        document.querySelectorAll('.sticky-container').forEach(function(container){
+            const stikyContainerHeight = container.querySelector('main').scrollWidth;
+            container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+        });
+    }
+
+    function isElementInViewport (el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+    }
+
+    function wheelHandler(evt){
+        
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
+            return isElementInViewport(container);
+        })[0];
+
+        if(!containerInViewPort){
+            return;
+        }
+
+        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+        let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+        if(g_canScrollHorizontally){
+            containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
+        }
+    }
+})();
+    </script>
+</body>
+</html>
