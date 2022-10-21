@@ -42,7 +42,7 @@ window.addEventListener("load", function () {
       scroller: pageContainer, //locomotive-scroll
       scrub: true,
       trigger: "#sectionPin",
-      pin: false,
+      pin: true,
       // anticipatePin: 1,
       start: "top top",
       end: pinWrapWidth
