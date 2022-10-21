@@ -197,7 +197,7 @@ targetsEndTrigger.forEach((target, index) => {
         start: "center center",
         // end,
         endTrigger,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
@@ -223,13 +223,13 @@ targetsHeight.forEach((target, index) => {
         scrub: true,
         start: "center center",
         end,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
     })
-    .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
-    .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
+    .from(target, { opacity: opacityFirst, duration: 0.5 }, 0)
+    .to(target, { opacity: opacitySecond, duration: 0.5 }, 0.8);
 });
 
 targetsBreak.forEach((target, index) => {
@@ -249,13 +249,13 @@ targetsBreak.forEach((target, index) => {
         scrub: true,
         start: "center center",
         end,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
     })
-    .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
-    .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
+    .from(target, { opacity: opacityFirst, duration: 0.5 }, 0)
+    .to(target, { opacity: opacitySecond, duration: 0.5 }, 0.8);
 });
       </script>
 </body>
