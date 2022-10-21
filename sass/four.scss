@@ -140,15 +140,23 @@ body {
   }
 }
 
+.moments{
+  .card {
+    &__img-holder {
+      background: white !important;
+    }
+  }
+}
 .moments,.peserta {
   .card {
     @media screen and (max-width:766px) {
       display: block;
     }
     &__img-holder {
+      background: darkred;
       @media screen and (max-width:766px) {
         width: 100vw;
-        height: auto;
+        height: 240px;
       }
     }
     &__text {
