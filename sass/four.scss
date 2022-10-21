@@ -169,3 +169,23 @@ body {
     height: 100%;
   }
 }
+
+.scroll-totop {
+  position: fixed;
+  right: 8px;
+  width: 36px;
+  z-index: 99;
+  height: 36px;
+  border-radius: 50%;
+  background: darkred;
+  color: white;
+  cursor: pointer;
+  bottom: 8px;
+  text-align: center;
+  i {
+    font-size: 32px;
+  }
+  @media screen and (max-width:766px) {
+    bottom: 62px;
+  }
+}

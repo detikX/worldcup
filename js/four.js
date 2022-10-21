@@ -1,3 +1,21 @@
+$(".scroll-totop").hide();
+		// fade in #back-top
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scroll-totop').fadeIn();
+				} else {
+					$('.scroll-totop').fadeOut();
+				}
+			});
+			// scroll body to 0px on click
+			$('.scroll-totop').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+			});
+		});
+
 $('.slider').slick({
     dots: false,
     infinite: false,
