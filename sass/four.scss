@@ -141,6 +141,22 @@ body {
 }
 
 .moments {
+  .card {
+    @media screen and (max-width:766px) {
+      display: block;
+    }
+    &__img-holder {
+      @media screen and (max-width:766px) {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    &__text {
+      @media screen and (max-width:766px) {
+        width: auto;
+      }
+    }
+  }
   .image {
     height: 100%;
   }
