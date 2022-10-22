@@ -49,6 +49,9 @@
     top:0;
     height:100%;
     width:50px;
+    @media screen and (max-width:766px) {
+        z-index: initial;
+    }
 }
 .h--timeline-dates::before{
     left:0;

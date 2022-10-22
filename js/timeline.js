@@ -349,7 +349,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	    } else if(distanceNorm > timeline.eventsMaxDistance) {
 	    	distanceNorm = timeline.eventsMaxDistance;
 	    }
-	    left = left + distanceNorm;
+	    left = left + distanceNorm - 50;
 	    timeline.date[i].setAttribute('style', 'left:' + left+'px');
 		}
 
