@@ -248,6 +248,9 @@ body {
   }
 }
 .moments,.peserta {
+  h2 {
+    // color: darkred;
+  }
   .card {
     @media screen and (max-width:766px) {
       display: block;
