@@ -586,5 +586,8 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	}
 }());
 
-
-
+$(".scroll-year").click(()=>{
+	$('html,body').animate({
+		scrollTop: $(".h--timeline-container").offset().top
+	},500)
+})
