@@ -125,7 +125,7 @@ body {
     width: 50vw;
     height: 50vh;
     cursor: pointer;
-    background-color: #fafafa;
+    // background-color: #fafafa;
     @media screen and (max-width:766px) {
       width: 100vw;
     }
@@ -246,7 +246,7 @@ body {
 .moments{
   .card {
     &__img-holder {
-      background: white !important;
+      background: white;
     }
   }
 }
