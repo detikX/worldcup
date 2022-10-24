@@ -16,6 +16,10 @@ $(".scroll-totop").hide();
 			});
 		});
 
+    AOS.init({
+      duration: 1200,
+    })
+
 $('.slider').slick({
     dots: false,
     infinite: false,
