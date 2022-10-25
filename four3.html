@@ -12,6 +12,63 @@
     <link rel="stylesheet" href="sass/font-awesome.css">
     <link rel="stylesheet" href="sass/four.css">
     <link rel="stylesheet" href="sass/timeline.css">
+    <style>
+      body {
+        /* background: url(img/bgbg.jpg);
+        background-position: center;
+        background-repeat: none; */
+        /* background-size: contain; */
+        /* background-attachment: fixed; */
+        font-family: 'Montserrat';
+        background: #1a0026;
+        /* color: #fafafa; */
+        color: #bbb;
+      }
+      body p,small {
+        font-family: 'Montserrat';
+      }
+      body .slick-next::before, body .slick-prev::before {
+        color: white;
+      }
+      h3 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+      }
+
+      body h2 {
+        /* color: #c00072; */
+      }
+
+      .h--timeline-event-content,.maskot__image,.moments .card__img-holder,.stadion .card{
+        border-color: transparent;
+        background: rgba(255, 255, 255, .1);
+      }
+      .h--timeline-event-title{
+        color: white;
+      }
+      .h--timeline-dates::before{
+        background: linear-gradient(to right, #1a0026, rgba(255, 255, 255, 0));
+      }
+      
+      .h--timeline-dates::after{
+        background: linear-gradient(to left, #1a0026, transparent);
+      }
+      .h--timeline-date{
+        color: #6e1e46;
+      }
+      .moments h2.text-center {
+        color: rgb(171 36 139);
+        font-size: 52px;
+      }
+      @media only screen and (max-width: 766px) {
+        .moments h2.text-center  {
+          font-size: 32px;
+        }
+      }
+      .scroll-year {
+        color: white;
+      }
+    </style>
 </head>
 <body>
       
@@ -24,7 +81,9 @@
         
       
       <div class="wrap-detik" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio beatae doloremque adipisci est, voluptatum in minima dolore corporis harum quod molestias iure sequi quidem molestiae suscipit, eveniet reprehenderit atque magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad itaque hic eligendi nisi aliquid tempora fugiat odit iure sed necessitatibus, dolore, ratione odio quae asperiores tempore rerum facilis! Ut. </p>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio beatae doloremque adipisci est, voluptatum in minima dolore corporis harum quod molestias iure sequi quidem molestiae suscipit, eveniet reprehenderit atque magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad itaque hic eligendi nisi aliquid tempora fugiat odit iure sed necessitatibus, dolore, ratione odio quae asperiores tempore rerum facilis! Ut. </p>
+          </div>
       </div>
 
       
@@ -101,91 +160,186 @@
   
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">March 20th, 2013</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
+
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">May 20th, 2012</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
+
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">July 9th, 2011</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
+
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">August 30th, 2007</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
+
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">September 15th, 2001</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">November 1st, 1997</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">December 10th, 1994</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">January 29th, 1991</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
-  
     <li class="h--timeline-event text-component">
       <div class="h--timeline-event-content container">
-      <h2 class="h--timeline-event-title">Event title here</h2>
-      <em class="h--timeline-event-date">March 3rd, 1988</em>
-      <p class="h--timeline-event-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-      </p>
+        <div class="flag">
+          <img src="img/flag/italy.svg" alt="">
+        </div>
+        <div class="to-top">
+          <h2 class="h--timeline-event-title">Italia</h2>
+          <em class="h--timeline-event-date">Juni 1934</em>
+          <div class="image">
+            <img src="img/history/1930.jpg" alt="">
+          </div>
+          <p class="h--timeline-event-description">
+            Final: Uruguay 4-2 Argentina
+          </p>
+          <p>
+            Best Player: Giuseppe Meazza
+          </p>
+        </div>
       </div>
     </li>
     </ol>
@@ -219,7 +373,7 @@
           </div>
         </div>
         <div class="maskot__image">
-          <img src="img/maskot/2014-brazil.jpg" alt="">
+          <img src="img/maskot/2014-brazil.png" alt="">
           <div class="namenya">
             <div class="year">1972</div>
             <div class="namex">Fuleco</div>
@@ -445,7 +599,7 @@
         </div>
       </div> -->
 
-      <div class="top-skorer" style="background: #fafafa;">
+      <div class="top-skorer">
         <div class="wrap-detik">
           <h2 class="text-center">5 Top Skor Sepanjang Masa Piala Dunia</h2>
           <p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat maxime, debitis qui nostrum laborum officia fuga? Soluta officiis ratione, numquam sint inventore iure odio? Inventore autem maiores distinctio ea!</p>
@@ -542,14 +696,14 @@
       </div>
       
 
-      <hr>
-
       <div class="piala-dunia-qatar">
         <div class="pembukaan">
           <div class="wrap-detik">
-            <h2>Piala Dunia Qatar</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vel dignissimos et, at quo, recusandae culpa ad aliquam suscipit molestias consequatur eum est natus quia magnam commodi officiis a! Vero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat sit saepe aspernatur quas. Recusandae beatae debitis, excepturi amet ex magnam quidem at aliquam aspernatur ducimus, libero possimus hic nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi officiis consequatur. Minus velit error beatae placeat recusandae, iure doloribus tempora dignissimos excepturi expedita, cupiditate rerum dicta optio, sint perferendis?</p>
+            <div class="paragraph">
+            <h2 class="text-center">Piala Dunia Qatar</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vel dignissimos et, at quo, recusandae culpa ad aliquam suscipit molestias consequatur eum est natus quia magnam commodi officiis a! Vero.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat sit saepe aspernatur quas. Recusandae beatae debitis, excepturi amet ex magnam quidem at aliquam aspernatur ducimus, libero possimus hic nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi officiis consequatur. Minus velit error beatae placeat recusandae, iure doloribus tempora dignissimos excepturi expedita, cupiditate rerum dicta optio, sint perferendis?</p>
+            </div>
           </div>
         </div>
 
@@ -579,8 +733,10 @@
             </div>
           </div> -->
           <div class="wraps">
-            <h2 class="text-center">Stadion Megah Penyelenggara</h2>
-            <p class="text-center">Berikut stadion-stadion yang akan digelar pertandingan.</p>
+            <div class="wrap-detik">
+              <h2 class="text-center">Stadion Megah Penyelenggara</h2>
+              <p class="text-center">Beberapa tempat yang akan menyelenggarakan pertandingan-pertandingan terbaik. Silahkan klik untuk melihat lebih besar</p>
+            </div>
             <div class="card">
               <div class="card-image">
                 <a href="img/stadion/United-Arab-Emirates-v-Syria-FIFA-Arab-Cup-Qatar-2021.avif" data-fancybox="gallery" data-caption="Caption Images 1">
@@ -615,9 +771,9 @@
 
       </div>
       
-      <footer>
+      <!-- <footer>
         <h2>This is the end</h2>
-      </footer>
+      </footer> -->
 
       <div class="scroll-totop">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
