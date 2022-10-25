@@ -388,3 +388,88 @@ body {
     }
   }
 }
+
+.youtube-wrap {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  .youtube {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    margin: 0 8px;
+    @media screen and (max-width:766px) {
+      width: 100%;
+      display: block;
+    }
+    .play-group {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      cursor: pointer;
+      &:hover {
+        .play-bg {
+          background: purple;
+        }
+      }
+      .play-bg {
+        background: #5454d4;
+        width: 80px;
+        height: 80px;
+        transition: .3s;
+        border-radius: 50%;
+        
+      }
+      img {
+        width: auto;
+        position: absolute;
+        top: 28%;
+        left: 40%;
+        height: auto;
+        object-fit: contain;
+        @media screen and (max-width:766px) {
+          top: 40%;
+        }
+      }
+    }
+    iframe,img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      margin: 8px auto;
+      display: block;
+      @media screen and (max-width:766px) {
+        width: 100%;
+        margin: 0 auto 24px;
+      }
+    }
+  }
+}
+
+body {
+  .modal-content {
+    background: transparent;
+  }
+}
+
+.modal-youtube {
+  margin: 0 auto;
+  width: 860px;
+  height: 430px;
+  @media screen and (max-width:766px) {
+    width: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media screen and (max-width:766px) {
+      height: 320px;
+    }
+  }
+}
+
+.modal-footer {
+  border-top: 1px solid transparent !important;
+}
