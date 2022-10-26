@@ -72,6 +72,12 @@
       .scroll-year {
         color: white;
       }
+      .h--timeline-line li:nth-child(even) .h--timeline-date::before {
+        bottom: 43px;
+      }
+      .h--timeline-line li:nth-child(odd) .h--timeline-date:hover::before, .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before{
+        bottom: -5px;
+      }
     </style>
 </head>
 <body>
