@@ -471,6 +471,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-color: transparent;
     @media screen and (max-width:766px) {
       // height: 320px;
     }
