@@ -31,7 +31,7 @@
       body .slick-next::before, body .slick-prev::before {
         color: white;
       }
-      h1.the-title {
+      h1.the-title,h2.the-title {
         color: #6e1e46;
         font-size: 72px;
       }
@@ -85,7 +85,9 @@
 <body>
       
         <section class="banner">
-          <h1 class="the-title">Pesta Bola Dunia di Negeri Minyak</h1>
+          <h2 class="the-title" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200">Pesta Bola Dunia di Negeri Minyak</h2>
+          <!-- <h2 class="the-title">Pesta Bola Dunia</h2>
+          <h2 class="the-title bottomx">di Negeri Minyak</h2> -->
           <div class="image">
             <img src="img/wallpaper.jpg" alt="">
           </div>
@@ -716,7 +718,7 @@
             </div>
             <div class="youtube">
               <img src="https://img.youtube.com/vi/8BkYKwHLXiU/maxresdefault.jpg" alt="">
-              <div class="play-group">
+              <div class="play-group" data-toggle="modal" data-target="#ricky">
                 <div class="play-bg"></div>
                 <img src="img/play.png" alt="">
               </div>
@@ -834,7 +836,7 @@
                 </div>
               </div>
               <div class="group-country">
-                <h3>Group A</h3>
+                <h3>Group B</h3>
                 <table class="table">
                   <tr>
                     <td>A1</td>
@@ -883,6 +885,19 @@
             <i class="fa fa-times" aria-hidden="true"></i>
             <div class="modal-body modal-youtube">
               <iframe src="https://www.youtube.com/embed/pRpeEdMmmQ0">
+              </iframe>
+            </div>
+              <button type="button" class="close__ btn btn-secondary" data-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ricky" tabindex="-1" role="dialog" aria-labelledby="rickyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <div class="modal-body modal-youtube">
+              <iframe src="https://www.youtube.com/embed/8BkYKwHLXiU">
               </iframe>
             </div>
               <button type="button" class="close__ btn btn-secondary" data-dismiss="modal">Tutup</button>

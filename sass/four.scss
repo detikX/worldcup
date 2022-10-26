@@ -31,7 +31,7 @@ body {
       object-fit: cover;
     }
   }
-  h1 {
+  h1,h2 {
     position: absolute;
     left: 50%;
     top: 5%;
@@ -44,7 +44,7 @@ body {
       font-size: 72px;
       text-shadow: 1px 1px white;
       @media screen and (max-width:766px) {
-        font-size: 32px;
+        font-size: 48px;
       }
     }
 }
@@ -110,6 +110,9 @@ body {
     width: 860px;
     margin: 0 auto;
     display: block;
+    @media screen and (min-width:1500px) {
+      width: 1080px;
+    }
     @media screen and(max-width:766px) {
         width: auto;
         padding: 0 16px;
