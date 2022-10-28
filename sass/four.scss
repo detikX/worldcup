@@ -537,6 +537,10 @@ body {
         color: white;
         border-top-color: transparent;
         line-height: 42px;
+        @media screen and (max-width:766px) {
+          line-height: initial;
+          font-size: 12px;
+        }
         &:nth-child(1) {
           width: 15%;
         }
