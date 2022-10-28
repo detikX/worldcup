@@ -560,9 +560,9 @@ body {
   padding: 16px;
 }
 @keyframes roll { 
-  0% {left:40%; -webkit-transform: rotate(-360deg);}
-  50% {left:60%; -webkit-transform: rotate(360deg);}
-  100% {left:40%; -webkit-transform: rotate(-360deg);}
+  0% {left:45%; -webkit-transform: rotate(-360deg);}
+  50% {left:55%; -webkit-transform: rotate(360deg);}
+  100% {left:45%; -webkit-transform: rotate(-360deg);}
 }
 .bolalob {
   display: block;
@@ -576,7 +576,7 @@ body {
     margin: 0px;
     position: absolute;
     transform: translate(-50%,0);
-    left: 40%;
+    left: 45%;
     filter: grayscale(100%);
     animation:roll 4.5s infinite;
     img {
