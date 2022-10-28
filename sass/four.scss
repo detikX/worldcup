@@ -141,6 +141,7 @@ body {
     // background-color: #fafafa;
     @media screen and (max-width:766px) {
       width: 100%;
+      // height: 50vh;
     }
     
       img {
@@ -224,6 +225,10 @@ body {
     margin: 0 -8px;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 body {
   .slick {
     &-next,&-prev{
@@ -260,6 +265,15 @@ body {
   .card {
     &__img-holder {
       background: white;
+
+    }
+  }
+}
+
+#card1 {
+  .card__img-holder {
+    @media screen and (max-width:766px) {
+      height: 50vh;
     }
   }
 }
