@@ -21,7 +21,8 @@
         /* background-size: contain; */
         /* background-attachment: fixed; */
         font-family: 'Montserrat';
-        background: #1a0026;
+        background: #572d7a;
+        /* background: #5d5799; */
         /* color: #fafafa; */
         color: #bbb;
       }
@@ -52,14 +53,14 @@
         color: white;
       }
       .h--timeline-dates::before{
-        background: linear-gradient(to right, #1a0026, rgba(255, 255, 255, 0));
+        background: linear-gradient(to right, #572d7a, rgba(255, 255, 255, 0));
       }
       
       .h--timeline-dates::after{
-        background: linear-gradient(to left, #1a0026, transparent);
+        background: linear-gradient(to left, #572d7a, transparent);
       }
       .h--timeline-date{
-        color: #6e1e46;
+        color: #c8c8c8;
       }
       .moments h2.text-center {
         color: rgb(171 36 139);
@@ -370,19 +371,10 @@
   </div>
   </section>
       
-      <!-- <div class="card endtrigger" id="card1">
-        <div class="card__img-holder">
-            <img src="img/player/cr7.png" alt="">
-        </div>
-        <div class="card__img-holder">
-            <img src="img/player/messi.png" alt="">
-        </div>
-      </div> -->
-      
   <div class="card endtrigger card--reverse" id="card1">
     <div class="card__img-holder">
       <div class="slider">
-        <div class="maskot__image">
+        <div class="maskot__image" data-toggle="modal" data-target="#exampleModal">
           <img src="img/maskot/2010-zakumi.png" alt="">
           <div class="namenya">
             <div class="year">1966</div>
@@ -445,7 +437,7 @@
         <div class="card height">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/maradona.jpg" alt="">
+              <img src="img/player/memorable/mara.jpg" alt="">
             </div>
           </div>
           <div class="card__text">
@@ -459,7 +451,7 @@
         <div class="card height card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/rene.jpg" alt="">
+              <img src="img/player/memorable/rene.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -473,7 +465,7 @@
         <div class="card height">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/baggio.jpeg" alt="">
+              <img src="img/player/memorable/baggio.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -486,7 +478,7 @@
         <div class="card height card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/becks.jpeg" alt="">
+              <img src="img/player/memorable/becks.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -500,7 +492,7 @@
         <div class="card height card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/zidane.jpeg" alt="">
+              <img src="img/player/memorable/zidane.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -513,7 +505,7 @@
         <div class="card height card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/dejong.jpeg" alt="">
+              <img src="img/player/memorable/dejong.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -526,7 +518,7 @@
         <div class="card height">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/vanpersie.jpg" alt="">
+              <img src="img/player/memorable/rvp.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -540,82 +532,7 @@
       </div>
       
 
-      <!-- <div class="peserta" style="background: #fafafa;">
-        <h1>Peserta Piala Bola Dunia 2022</h1>
-        
-        <div class="card break">
-          <div class="card__img-holder"></div>
-          <div class="card__text">
-            <h2>Grup A</h2>
-            <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. <br><br> Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="card break card--reverse">
-          <div class="card__img-holder"></div>
-         <div class="card__text">
-            <h2>Grup B</h2>
-             <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="card break">
-          <div class="card__img-holder"></div>
-         <div class="card__text">
-            <h2>Grup C</h2>
-            <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. <br><br> Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-
-        <div class="card break">
-          <div class="card__img-holder"></div>
-          <div class="card__text">
-            <h2>Grup D</h2>
-            <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. <br><br> Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="card break card--reverse">
-          <div class="card__img-holder"></div>
-         <div class="card__text">
-            <h2>Grup E</h2>
-             <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="card break">
-          <div class="card__img-holder"></div>
-         <div class="card__text">
-            <h2>Grup F</h2>
-            <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. <br><br> Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-
-        <div class="card break">
-          <div class="card__img-holder"></div>
-          <div class="card__text">
-            <h2>Grup G</h2>
-            <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. <br><br> Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="card break card--reverse">
-          <div class="card__img-holder"></div>
-         <div class="card__text">
-            <h2>Grup H</h2>
-             <p>Maecenas sagittis tincidunt risus. In auctor nisl a neque elementum venenatis. In nec sagittis justo, non accumsan urna. Nunc at quam vestibulum, pharetra elit et, varius dolor. Maecenas elementum vitae sem vitae vehicula. Donec vel erat sem. Aliquam vulputate tortor eget ligula sollicitudin rutrum.
-            </p>
-          </div>
-        </div>
-      </div> -->
-
+  
       <div class="top-skorer">
         <div class="wrap-detik">
           <h2 class="text-center">5 Top Skor Sepanjang Masa Piala Dunia</h2>
@@ -625,7 +542,7 @@
         <div class="card break">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/klose.jpg" alt="">
+              <img src="img/player/topskor/klose-jerman.jpg" alt="">
             </div>
           </div>
           <div class="card__text">
@@ -638,7 +555,7 @@
         <div class="card break card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/ronaldo.jpg" alt="">
+              <img src="img/player/topskor/ronaldo-brazil.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -651,7 +568,7 @@
         <div class="card break">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/gerd.jpg" alt="">
+              <img src="img/player/topskor/muller-jerman.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -664,7 +581,7 @@
         <div class="card break card--reverse">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/just.jpg" alt="">
+              <img src="img/player/topskor/justf-perancis.jpg" alt="">
             </div>
           </div>
           <div class="card__text">
@@ -677,7 +594,7 @@
         <div class="card break">
           <div class="card__img-holder">
             <div class="image">
-              <img src="img/player/pele.jpg" alt="">
+              <img src="img/player/topskor/pele-brazil.jpg" alt="">
             </div>
           </div>
          <div class="card__text">
@@ -800,28 +717,28 @@
                   <tr>
                     <td>A1</td>
                     <td>
-                      <img src="img/flag-rounded/qatar.png" alt="">
+                      <img src="img/flag-rounded/01_QATAR.png" alt="">
                     </td>
                     <td>Qatar</td>
                   </tr>
                   <tr>
                     <td>A2</td>
                     <td>
-                      <img src="img/flag-rounded/equador.png" alt="">
+                      <img src="img/flag-rounded/02_Ecuador.png" alt="">
                     </td>
                     <td>Ecuador</td>
                   </tr>
                   <tr>
                     <td>A3</td>
                     <td>
-                      <img src="img/flag-rounded/senegal.png" alt="">
+                      <img src="img/flag-rounded/03_Senegal.png" alt="">
                     </td>
                     <td>Senegal</td>
                   </tr>
                   <tr>
                     <td>A4</td>
                     <td>
-                      <img src="img/flag-rounded/netherland.png" alt="">
+                      <img src="img/flag-rounded/04_Netherland.png" alt="">
                     </td>
                     <td>Belanda</td>
                   </tr>
@@ -842,32 +759,296 @@
                 <h3>Group B</h3>
                 <table class="table">
                   <tr>
-                    <td>A1</td>
+                    <td>B1</td>
                     <td>
-                      <img src="img/flag-rounded/qatar.png" alt="">
+                      <img src="img/flag-rounded/05_England.png" alt="">
                     </td>
-                    <td>Qatar</td>
+                    <td>Inggris</td>
                   </tr>
                   <tr>
-                    <td>A2</td>
+                    <td>B2</td>
                     <td>
-                      <img src="img/flag-rounded/equador.png" alt="">
+                      <img src="img/flag-rounded/06_Iran.png" alt="">
                     </td>
-                    <td>Ecuador</td>
+                    <td>Iran</td>
                   </tr>
                   <tr>
-                    <td>A3</td>
+                    <td>B3</td>
                     <td>
-                      <img src="img/flag-rounded/senegal.png" alt="">
+                      <img src="img/flag-rounded/07_USA.png" alt="">
                     </td>
-                    <td>Senegal</td>
+                    <td>Amerika Serikat</td>
                   </tr>
                   <tr>
-                    <td>A4</td>
+                    <td>B4</td>
                     <td>
-                      <img src="img/flag-rounded/netherland.png" alt="">
+                      <img src="img/flag-rounded/08_Wales.png" alt="">
                     </td>
-                    <td>Belanda</td>
+                    <td>Wales</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group C</h3>
+                <table class="table">
+                  <tr>
+                    <td>C1</td>
+                    <td>
+                      <img src="img/flag-rounded/09_Argentina.png" alt="">
+                    </td>
+                    <td>Argentina</td>
+                  </tr>
+                  <tr>
+                    <td>C2</td>
+                    <td>
+                      <img src="img/flag-rounded/10_Arab.png" alt="">
+                    </td>
+                    <td>Arab Saudi</td>
+                  </tr>
+                  <tr>
+                    <td>C3</td>
+                    <td>
+                      <img src="img/flag-rounded/11_Mexico.png" alt="">
+                    </td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <td>C4</td>
+                    <td>
+                      <img src="img/flag-rounded/12_Polandia.png" alt="">
+                    </td>
+                    <td>Polandia</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group D</h3>
+                <table class="table">
+                  <tr>
+                    <td>D1</td>
+                    <td>
+                      <img src="img/flag-rounded/13_Perancis.png" alt="">
+                    </td>
+                    <td>Perancis</td>
+                  </tr>
+                  <tr>
+                    <td>D2</td>
+                    <td>
+                      <img src="img/flag-rounded/14 _Denmark.png" alt="">
+                    </td>
+                    <td>Denmark</td>
+                  </tr>
+                  <tr>
+                    <td>D3</td>
+                    <td>
+                      <img src="img/flag-rounded/15 _Tunisia.png" alt="">
+                    </td>
+                    <td>Tunisia</td>
+                  </tr>
+                  <tr>
+                    <td>D4</td>
+                    <td>
+                      <img src="img/flag-rounded/16_Australia.png" alt="">
+                    </td>
+                    <td>Australia</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group E</h3>
+                <table class="table">
+                  <tr>
+                    <td>E1</td>
+                    <td>
+                      <img src="img/flag-rounded/17_Spanyol.png" alt="">
+                    </td>
+                    <td>Spanyol</td>
+                  </tr>
+                  <tr>
+                    <td>E2</td>
+                    <td>
+                      <img src="img/flag-rounded/18_Jerman.png" alt="">
+                    </td>
+                    <td>Jerman</td>
+                  </tr>
+                  <tr>
+                    <td>E3</td>
+                    <td>
+                      <img src="img/flag-rounded/19_Jepang.png" alt="">
+                    </td>
+                    <td>Jepang</td>
+                  </tr>
+                  <tr>
+                    <td>E4</td>
+                    <td>
+                      <img src="img/flag-rounded/20_Kosta.png" alt="">
+                    </td>
+                    <td>Kosta Rika</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group F</h3>
+                <table class="table">
+                  <tr>
+                    <td>F1</td>
+                    <td>
+                      <img src="img/flag-rounded/21_Belgia.png" alt="">
+                    </td>
+                    <td>Belgia</td>
+                  </tr>
+                  <tr>
+                    <td>F2</td>
+                    <td>
+                      <img src="img/flag-rounded/22_Kanada.png" alt="">
+                    </td>
+                    <td>Kanada</td>
+                  </tr>
+                  <tr>
+                    <td>F3</td>
+                    <td>
+                      <img src="img/flag-rounded/23_Maroko.png" alt="">
+                    </td>
+                    <td>Maroko</td>
+                  </tr>
+                  <tr>
+                    <td>F4</td>
+                    <td>
+                      <img src="img/flag-rounded/24_Kroasia.png" alt="">
+                    </td>
+                    <td>Kroasia</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group G</h3>
+                <table class="table">
+                  <tr>
+                    <td>G1</td>
+                    <td>
+                      <img src="img/flag-rounded/25_Brazil.png" alt="">
+                    </td>
+                    <td>Brazil</td>
+                  </tr>
+                  <tr>
+                    <td>G2</td>
+                    <td>
+                      <img src="img/flag-rounded/26_Serbia.png" alt="">
+                    </td>
+                    <td>Serbia</td>
+                  </tr>
+                  <tr>
+                    <td>G3</td>
+                    <td>
+                      <img src="img/flag-rounded/27_Swiss.png" alt="">
+                    </td>
+                    <td>Swiss</td>
+                  </tr>
+                  <tr>
+                    <td>G4</td>
+                    <td>
+                      <img src="img/flag-rounded/28_Kamerun.png" alt="">
+                    </td>
+                    <td>Kamerun</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-image group-a">
+                <div class="image">
+                  <img src="img/profil/uruguay.png" alt="">
+                </div>
+                <div class="image">
+                  <img src="img/profil/england.jpg" alt="">
+                </div>
+              </div>
+              <div class="group-country">
+                <h3>Group H</h3>
+                <table class="table">
+                  <tr>
+                    <td>H1</td>
+                    <td>
+                      <img src="img/flag-rounded/29_Portugal.png" alt="">
+                    </td>
+                    <td>Portugal</td>
+                  </tr>
+                  <tr>
+                    <td>H2</td>
+                    <td>
+                      <img src="img/flag-rounded/30_Ghana.png" alt="">
+                    </td>
+                    <td>Ghana</td>
+                  </tr>
+                  <tr>
+                    <td>H3</td>
+                    <td>
+                      <img src="img/flag-rounded/31_Uruguay.png" alt="">
+                    </td>
+                    <td>Uruguay</td>
+                  </tr>
+                  <tr>
+                    <td>H4</td>
+                    <td>
+                      <img src="img/flag-rounded/32_Korsel.png" alt="">
+                    </td>
+                    <td>Korea Selatan</td>
                   </tr>
                 </table>
               </div>
@@ -902,6 +1083,20 @@
               </iframe>
             </div>
               <button type="button" class="close__ btn btn-secondary" data-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal maskot -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">            
+            <div class="modal-body">
+              <div class="contentx">
+                Bola tahun 1930
+              </div>
+            </div>
           </div>
         </div>
       </div>

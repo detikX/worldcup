@@ -185,8 +185,9 @@
     width:34px;
     border-radius:50%;
     border-width:2px;
+    background: white;
     border-style:solid;
-    border-color:#f7f7f7;
+    border-color:#7619a0;
     transition:border-color 0.3s;
 }
 .h--timeline-navigation::after{
@@ -215,6 +216,7 @@
 }
 .h--timeline-navigation--inactive{
     cursor:not-allowed;
+    opacity: .3;
 }
 .h--timeline-navigation--inactive::after{
     background-position:0 -16px;

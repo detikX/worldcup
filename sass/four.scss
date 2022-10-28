@@ -136,7 +136,7 @@ body {
   
   .card__img-holder {
     width: 50vw;
-    height: 50vh;
+    height: 70vh;
     cursor: pointer;
     // background-color: #fafafa;
     @media screen and (max-width:766px) {
@@ -523,6 +523,15 @@ body {
         color: white;
         border-top-color: transparent;
         line-height: 42px;
+        &:nth-child(1) {
+          width: 15%;
+        }
+        &:nth-child(2) {
+          width: 15%;
+        }
+        &:nth-child(3) {
+          width: 70%;
+        }
         img {
           width: 32px;
           height: 32px;
