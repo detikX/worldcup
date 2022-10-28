@@ -558,6 +558,32 @@ body {
 .titlesub {
   // background: #aa278d;
   padding: 16px;
+  h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100px;
+      width: 80px;
+      height: 2px;
+      background: #fff;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -100px;
+      width: 80px;
+      height: 2px;
+      background: #fff;
+      top: 50%;
+    }
+
+  }
 }
 @keyframes roll { 
   0% {left:45%; -webkit-transform: rotate(-360deg);}
@@ -569,6 +595,7 @@ body {
   text-align: center;
   margin: 0 auto;
   position: relative;
+  
   &__img {
     // display: inline-block;
     width: 24px;
@@ -579,6 +606,23 @@ body {
     left: 45%;
     filter: grayscale(100%);
     animation:roll 4.5s infinite;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__img2 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    // position: absolute;
+    // transform: translate(-50%,0);
+    // left: 50%;
+    filter: grayscale(100%);
+    // animation:roll 4.5s infinite;
     img {
       width: 100%;
       height: 100%;
