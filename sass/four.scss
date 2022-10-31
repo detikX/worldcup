@@ -265,6 +265,14 @@ body {
   // overflow-x: hidden;
   position: relative;
   background: #343232;
+  overflow-x: clip;
+  // &::after {
+  //   content: '';
+  //   background: url("../img/bgbg1.png");
+  // }
+  .o-hidden {
+    // overflow-x: hidden;
+  }
   // .card__img-holder {
   //   position: relative;
   //   &::before {
