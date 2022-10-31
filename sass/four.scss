@@ -180,7 +180,7 @@ body {
         bottom: 0;
         right: 0;
         left: 0;
-        background: linear-gradient(to top, black, transparent);
+        // background: linear-gradient(to top, black, transparent);
         color: white;
         padding: 8px;
         height: 50px;
@@ -210,7 +210,7 @@ body {
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
@@ -262,6 +262,22 @@ body {
 }
 
 .moments{
+  overflow-x: hidden;
+  position: relative;
+  // background: red;
+  .helping{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    height: 200px;
+    opacity: .1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   .card {
     &__img-holder {
       background: white;
