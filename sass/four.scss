@@ -353,6 +353,16 @@ body {
   }
 }
 .top-skorer {
+  position: relative;
+  // &::after {
+  //   content: '';
+  //   height: 80px;
+  //   background: linear-gradient(to top, #572d7a, #343232);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  // }
   .card__img-holder {
     // border: 1px solid;
     position: relative;
@@ -595,28 +605,37 @@ body {
 .titlesub {
   // background: #aa278d;
   padding: 16px;
+  position: relative;
+  z-index: 99;
+  background: linear-gradient(to right, #b0ebeb 0%, #aba9ad 100%);
+  width: fit-content;
+  margin: 0 auto;
+  top: 16px;
   h2 {
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    color: #572d7a;
     display: block;
+    z-index: 99;
+    font-style: italic;
     &::before {
       content: "";
       position: absolute;
-      left: -100px;
+      left: -96px;
       width: 80px;
       height: 2px;
-      background: #fff;
+      background: linear-gradient(to right, #b0ebeb 0%, #aba9ad 100%);
       top: 50%;
     }
 
     &::after {
       content: "";
       position: absolute;
-      right: -100px;
+      right: -96px;
       width: 80px;
       height: 2px;
-      background: #fff;
+      background: linear-gradient(to right, #b0ebeb 0%, #aba9ad 100%);
       top: 50%;
     }
 
