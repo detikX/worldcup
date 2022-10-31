@@ -265,6 +265,47 @@ body {
   // overflow-x: hidden;
   position: relative;
   background: #343232;
+  // .card__img-holder {
+  //   position: relative;
+  //   &::before {
+  //     content: "";
+  //     width: 240px;
+  //     height: 240px;
+  //     border-radius: 50%;
+  //     background: black;
+  //     opacity: .1;
+  //     margin: 0 auto;
+  //     display: block;
+  //     position: absolute;
+  //     left: 30%;
+  //     top: 20%;
+  //   }
+  // }
+  .card__text {
+    width: 50vw;
+    padding: 16px;
+    position: relative;
+    h2,h3,p {
+      position: relative;
+      z-index: 99;
+    }
+    &::before {
+      content: "";
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: black;
+      opacity: .1;
+      margin: 0 auto;
+      display: block;
+      position: absolute;
+      left: 30%;
+      top: 20%;
+    }
+      @media screen and (max-width:766px) {
+        width: auto;
+      }
+  }
   &__help {
     width: 100%;
     height: 300px;
