@@ -759,3 +759,52 @@ body {
     }
   }
 }
+
+.last-show {
+  overflow-x: clip;
+  &__all {
+    display: block;
+    .image {
+      // width: 320px;
+      width: 30%;
+      @media screen and (max-width:766px) {
+        width: 100%;
+        margin: 8px 0;
+      }
+      display: inline-block;
+      height: 420px;
+      // float: left;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .prestasi {
+      width: 30%;
+      .pl-1,.pl-2,.pl-3,.pl-4,.pl-5 {
+        @media screen and (max-width:766px) {
+          padding-left: 0 !important;
+        }
+      }
+      @media screen and (max-width:766px) {
+        width: 100%;
+        margin: 8px 0;
+      }
+      .title {
+        font-size: 16px;
+        color: white;
+        background: #343232;
+        padding: 4px 8px;
+        width: fit-content;
+        margin-bottom: 8px;
+      }
+      vertical-align: top;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .clear {
+      clear: both;
+    }
+  }
+}
