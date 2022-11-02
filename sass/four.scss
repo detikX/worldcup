@@ -261,15 +261,26 @@ body {
   }
 }
 
+
+
+
 .moments{
   // overflow-x: hidden;
   position: relative;
-  background: #343232;
+  // background: #343232;
+  background: #617fbf;
   overflow-x: clip;
-  // &::after {
-  //   content: '';
-  //   background: url("../img/bgbg1.png");
-  // }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background: #617fbf;
+    transform: skew(4deg, 4deg);
+  }
   .o-hidden {
     // overflow-x: hidden;
   }
@@ -296,6 +307,7 @@ body {
     h2,h3,p {
       position: relative;
       z-index: 99;
+      color: #d2cdff;
     }
     &::before {
       content: "";
