@@ -22,6 +22,15 @@ body {
 .banner {
   height: 100vh;
   position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #572d7a, transparent);
+  }
   .image {
     width: 100%;
     height: 100%;
@@ -290,11 +299,11 @@ body {
   &::after {
     content: "";
     position: absolute;
-    bottom: -31px;
+    bottom: -45px;
     left: 0;
     right: 0px;
     width: 102%;
-    height: 78px;
+    height: 92px;
     background: #617fbf;
     transform: skew(4deg, 4deg);
     @media screen and(max-width:766px) {
