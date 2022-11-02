@@ -675,10 +675,30 @@ body {
       .image {
         height: 280px;
         width: 100%;
+        position: relative;
+        .name-negara {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 8px;
+          height: 50px;
+          text-align: right;
+          // background: linear-gradient(to top, black, rgba(black,.5));
+          div {
+            line-height: 66px;
+            font-style: italic;
+            /* background: white; */
+            font-size: 16px;
+            font-weight: bold;
+            &.red {
+              color: #570000;
+            }
+          }
+        }
         img {
           width: 100%;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
           border-radius: 8px;
           @media screen and (max-width:766px) {
             object-fit: cover;
