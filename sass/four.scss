@@ -797,6 +797,27 @@ body {
 .juara-dunia {
   .negara {
     width: 240px; height:300px; display: inline-block;
+    position: relative;
+    // overflow-x: clip;
+    .tahun-juara {
+      position: absolute;
+      overflow: hidden;
+      bottom: 6%;
+      left: 4px;
+      line-height: 32px;
+      right: 3px;
+      height: 32px;
+      // background: linear-gradient(to top, #000, transparent);
+      // background: #000;
+      background: rgba(#572d7a,.8);
+      color: #fff;
+      // border-radius: 0 0 15px 15px;
+      font-size: 14px;
+      text-align: right;
+      padding-right: 12px;
+      // text-shadow: 1px 1px black;
+    }
+
     img {
       width: 100%;
       height: 100%;
