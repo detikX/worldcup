@@ -802,7 +802,27 @@ body {
     display: block;
     .image {
       // width: 320px;
+      position: relative;
       width: 30%;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        height: 1px;
+        background: #a5a5a5;
+        top: 42px;
+        width: 35%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        left: 16px;
+        top: 36px;
+        background: white;
+      }
       @media screen and (max-width:766px) {
         width: 100%;
         margin: 8px 0;
