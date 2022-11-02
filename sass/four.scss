@@ -843,6 +843,19 @@ body {
           background: #a5a5a5;
           top: 42px;
           width: 35%;
+          @media screen and (max-width:766px) {
+            content: "";
+            position: absolute;
+            right: 38px;
+            border: 1px solid;
+            height: 41px;
+            left: initial;
+            background: transparent;
+            top: -12px;
+            width: 28%;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+          }
         }
         &::after {
           content: "";
@@ -853,6 +866,18 @@ body {
           left: 16px;
           top: 36px;
           background: white;
+          @media screen and (max-width:766px) {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: initial;
+            border-radius: 50%;
+            right: 33px;
+            /* border: 1px solid; */
+            top: -12px;
+            background: #fff;
+          }
         }
       }
       .to-right {
@@ -864,6 +889,20 @@ body {
           background: #a5a5a5;
           top: 135px;
           width: 35%;
+          @media screen and (max-width:766px) {
+            content: "";
+            position: absolute;
+            right: initial;
+            left: 46px;
+            top: initial;
+            border: 1px solid;
+            height: 45px;
+            background: transparent;
+            bottom: 70px;
+            width: 25%;
+            border-bottom: 1px solid transparent;
+            border-right: 1px solid transparent;
+          }
         }
         &::after {
           content: "";
@@ -874,6 +913,18 @@ body {
           right: 16px;
           top: 129px;
           background: white;
+          @media screen and (max-width:766px) {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: initial;
+            top: initial;
+            border-radius: 50%;
+            left: 41px;
+            bottom: 65px;
+            background: #fff;
+          }
         }
       }
       @media screen and (max-width:766px) {
