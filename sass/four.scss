@@ -650,8 +650,20 @@ body {
   border-top: 1px solid transparent !important;
 }
 
+
 .profil-negara {
   padding: 32px;
+  @media screen and (max-width:766px) {
+    padding: 32px 8px;
+  }
+  .slick-next::before, .slick-prev::before{
+    font-size: 24px;
+  }
+  .wrap-detik {
+    @media screen and (max-width:766px) {
+      padding: 0 4px;
+    }
+  }
   .group {
     display: block;
     margin: 42px 0 72px;
@@ -667,6 +679,7 @@ body {
           width: 100%;
           height: 100%;
           object-fit: contain;
+          border-radius: 8px;
           @media screen and (max-width:766px) {
             object-fit: cover;
           }
