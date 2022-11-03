@@ -339,7 +339,10 @@ body {
     width: 50vw;
     padding: 16px;
     position: relative;
-    h2,h3,p {
+    h2 {
+      color: white;
+    }
+    h3,p {
       position: relative;
       z-index: 99;
       color: #d2cdff;
