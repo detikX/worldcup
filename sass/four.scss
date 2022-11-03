@@ -306,6 +306,9 @@ body {
     height: 92px;
     background: #617fbf;
     transform: skew(4deg, 4deg);
+    @media screen and (min-width:1400px) {
+      width: 140%;
+    }
     @media screen and(max-width:766px) {
       bottom: -12px;
       right: 0;
@@ -676,6 +679,9 @@ body {
         height: 280px;
         width: 100%;
         position: relative;
+        @media screen and (min-width:1400px) {
+          height: 380px;
+        }
         .name-negara {
           position: absolute;
           bottom: 0;
