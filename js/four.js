@@ -93,3 +93,6 @@ $('.slider').slick({
     ]
   });
 
+$(".h--timeline-date").click(function(){
+  $(".helping_").fadeOut();
+})

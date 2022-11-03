@@ -78,6 +78,28 @@
     transition:-webkit-transform 0.4s;
     transition:transform 0.4s;
     transition:transform 0.4s, -webkit-transform 0.4s;
+    @keyframes MoveUpDown {
+        0%, 100% {
+            top: -44px;
+        }
+        50% {
+            top: -36px;
+        }
+      }
+    .helping_ {
+        position: absolute;
+        left: 132px;
+        animation: MoveUpDown .5s linear infinite;
+        /* width: 80px; */
+        background: rgba(255,255,255,.1);
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        top: -44px;
+        font-family: "Montserrat";
+        padding: 0px 4px;
+    }
 }
 .h--timeline-filling-line{
     position:absolute;
