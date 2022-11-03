@@ -173,6 +173,9 @@ body {
   
   .card__img-holder {
     width: 50vw;
+    // @media screen and (min-width:1400px) {
+    //   width: 40vw;
+    // }
     height: 50vh;
     // height: auto;
     cursor: pointer;
@@ -388,11 +391,25 @@ body {
     position: relative;
     h2 {
       color: white;
+      @media screen and (min-width:1990px) {
+        font-size: 4em;
+        line-height: 82px;
+      }
+    }
+    h3 {
+      font-size: 16px;
+      color: #fcfcfc !important;
     }
     h3,p {
       position: relative;
       z-index: 99;
       color: #d2cdff;
+    }
+    p {
+      @media screen and (min-width:1990px) {
+        font-size: 2em;
+        line-height: 42px;
+      }
     }
     &::before {
       content: "";
@@ -1087,5 +1104,17 @@ body {
     .clear {
       clear: both;
     }
+  }
+}
+
+.cek-width {
+  margin: 0 auto;
+  display: block;
+  @media screen and (min-width:1400px) {
+    width: 1280px;
+    
+  }
+  @media screen and (max-width:766px) {
+    width: auto;
   }
 }
