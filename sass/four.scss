@@ -66,9 +66,9 @@ body {
     display: block;
     border-radius: 8px;
     background: linear-gradient(45deg, #260032, transparent);
+    margin-bottom: 16px;
     @media screen and (max-width:766px) {
       padding: 8px;
-      margin-bottom: 16px;
     }
     .singer {
       @media screen and (max-width:766px) {
