@@ -59,6 +59,19 @@ body {
 }
 }
 
+.theme-song {
+  .card {
+    border: 1px solid;
+    padding: 32px;
+    display: block;
+    border-radius: 8px;
+    .title_ {
+      font-size: 24px;
+      color: white;
+    }
+  }
+}
+
 .scroll-year {
   cursor: pointer;
   // width: 32px;
@@ -701,6 +714,14 @@ body {
         height: 280px;
         width: 100%;
         position: relative;
+        border-radius: 8px;
+        &.maroon {
+          background: rgb(235, 158, 158);
+
+        }
+        &.yellow {
+          background: rgb(255, 255, 179);
+        }
         &:hover {
           .image__help {
             opacity: 1;
