@@ -1178,9 +1178,9 @@ body {
 }
 
 .cardx {
-  background: rgba(white,.1);
+  background: rgba(white,.05);
   padding: 8px;
-  transform: rotate(-3deg);
+  transform: rotate(2deg);
   @media screen and (max-width:766px) {
     padding: 4px;
   }
