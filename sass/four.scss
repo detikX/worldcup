@@ -64,9 +64,24 @@ body {
     // border: 1px solid;
     padding: 32px;
     display: block;
+    position: relative;
     border-radius: 8px;
     background: linear-gradient(45deg, #260032, transparent);
     margin-bottom: 16px;
+    .fontawesome-song {
+      position: absolute;
+      bottom: 8px;
+      // left: 50%;
+      left: 8px;
+      opacity: .1;
+      z-index: 1;
+      @media screen and (max-width:766px) {
+        opacity: .05;
+      }
+      i {
+        font-size: 5rem;
+      }
+    }
     @media screen and (max-width:766px) {
       padding: 8px;
     }
