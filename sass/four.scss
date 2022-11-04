@@ -402,6 +402,10 @@ body {
     h3 {
       font-size: 16px;
       color: #fcfcfc !important;
+      @media screen and (min-width:1900px) {
+        font-size: 2em;
+        margin: 16px 0;
+      }
     }
     h3,p {
       position: relative;
@@ -410,7 +414,7 @@ body {
     }
     p {
       @media screen and (min-width:1990px) {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 42px;
       }
     }
