@@ -801,6 +801,20 @@ body {
             font-size: 36px;
             margin-top: 24px;
             font-weight: bold;
+            @media screen and (max-width:766px) {
+              font-size: 28px;
+              // margin-top: 24px;
+              // line-height: 38px;
+              line-height: 28px;
+              font-weight: bold;
+              margin-bottom: 16px;
+              // font-weight: bold;
+            }
+          }
+          .captain,.pelatih {
+            @media screen and (max-width:766px) {
+              font-size: 14px;
+            }
           }
 
         }
