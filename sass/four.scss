@@ -525,6 +525,16 @@ body {
 .top-skorer {
   position: relative;
   margin-top: 52px;
+  h2 {
+    @media screen and (min-width:1900px) {
+      font-size: 4rem;
+    }
+  }
+  p {
+    @media screen and (min-width:1900px) {
+      font-size: 1.5rem;
+    }
+  }
   // &::after {
   //   content: '';
   //   height: 80px;
@@ -757,6 +767,9 @@ body {
         &.maroon {
           background: rgb(235, 158, 158);
 
+        }
+        &.green {
+          background: rgb(195, 255, 195);
         }
         &.yellow {
           background: rgb(255, 255, 179);
