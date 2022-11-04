@@ -1176,3 +1176,27 @@ body {
     width: auto;
   }
 }
+
+.cardx {
+  background: rgba(white,.1);
+  padding: 8px;
+  transform: rotate(-3deg);
+  @media screen and (max-width:766px) {
+    padding: 4px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 4px 0;
+      list-style: none;
+      border-bottom: 1px solid;
+      &:last-child {
+        border-bottom: 1px solid transparent;
+      }
+      @media screen and (max-width:766px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
