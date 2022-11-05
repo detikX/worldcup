@@ -278,6 +278,10 @@ body {
         border-radius: 50%;
         background: rgba(255,255,255,.12);
         @media screen and (min-width:1440px) {
+          width: 124px;
+          height: 124px;  
+        }
+        @media screen and (min-width:1990px) {
           width: 150px;
           height: 150px;  
         }
