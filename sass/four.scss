@@ -1190,7 +1190,7 @@ body {
     li {
       padding: 4px 0;
       list-style: none;
-      border-bottom: 1px solid;
+      border-bottom: 1px solid rgba(white,.2);
       &:last-child {
         border-bottom: 1px solid transparent;
       }
