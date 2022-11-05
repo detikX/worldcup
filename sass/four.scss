@@ -541,6 +541,10 @@ body {
   position: relative;
   margin-top: 52px;
   h2 {
+    font-size: 2.5rem;
+    @media screen and (max-width:766px) {
+      font-size: 2rem;
+    }
     @media screen and (min-width:1900px) {
       font-size: 4rem;
     }
@@ -1198,6 +1202,7 @@ body {
 .cardx {
   background: rgba(white,.05);
   padding: 8px;
+  border-left: 3px solid rgba(white,.5);
   // transform: rotate(2deg);
   @media screen and (max-width:766px) {
     padding: 4px;
@@ -1206,7 +1211,7 @@ body {
     padding: 0;
     margin: 0;
     li {
-      padding: 4px 0;
+      padding: 4px 8px;
       list-style: none;
       border-bottom: 1px solid rgba(white,.2);
       @media screen and (min-width:1440px) {
