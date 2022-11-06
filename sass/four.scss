@@ -60,6 +60,7 @@ body {
 }
 
 .theme-song {
+  // display: none;
   .card {
     // border: 1px solid;
     padding: 32px;
@@ -543,6 +544,7 @@ body {
 }
 .top-skorer {
   position: relative;
+  overflow-x: clip;
   margin-top: 52px;
   h2 {
     font-size: 2.5rem;
@@ -627,7 +629,7 @@ body {
 }
 
 .stadion {
-  
+  overflow-x: hidden;
   .wraps {
     display: block;
     margin: 0 auto;
@@ -782,9 +784,13 @@ body {
   
 }
 
+.jadwal-pertandingan {
+  overflow-x: clip;
+}
+
 .profil-negara {
   padding: 32px;
-  
+  overflow-x: clip;
   @media screen and (max-width:766px) {
     padding: 32px 8px;
   }
@@ -1021,10 +1027,12 @@ body {
 }
 
 .juara-dunia {
+  overflow-x: hidden;
+  // display: none;
   .negara {
     width: 240px; height:300px; display: inline-block;
     position: relative;
-    // overflow-x: clip;
+    
     .tahun-juara {
       position: absolute;
       overflow: hidden;
@@ -1056,8 +1064,13 @@ body {
   overflow-x: clip;
 }
 
+.theme-song {
+  overflow-x: clip;
+}
+
 .credit {
   overflow-x: clip;
+  // display: none !important;
   padding: 32px 0;
   background: #37003c;
   position: relative;
