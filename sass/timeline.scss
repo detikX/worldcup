@@ -99,6 +99,18 @@
         top: -44px;
         font-family: "Montserrat";
         padding: 0px 4px;
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: auto;
+            right: 31px;
+            bottom: -24px;
+            border: 12px solid;
+            border-color: transparent rgba(255,255,255,.1) transparent transparent;
+            transform: rotate(-90deg);
+        }
     }
 }
 .h--timeline-filling-line{
