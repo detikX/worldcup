@@ -1136,7 +1136,7 @@ body {
     vertical-align: top;
 
     @media screen and (max-width: 766px) {
-      font-size: 14px;
+      font-size: 12px !important;
     }
   }
   .jobdesc {
@@ -1153,9 +1153,6 @@ body {
     font-weight: bold;
     vertical-align: middle;
 
-    @media screen and (max-width:766px) {
-      font-size: 16px;
-    }
   }
   .containers {
     margin: 0 auto;
