@@ -627,6 +627,7 @@ body {
 }
 
 .stadion {
+  
   .wraps {
     display: block;
     margin: 0 auto;
@@ -777,10 +778,13 @@ body {
 .modal-footer {
   border-top: 1px solid transparent !important;
 }
-
+.juara-dunia {
+  
+}
 
 .profil-negara {
   padding: 32px;
+  
   @media screen and (max-width:766px) {
     padding: 32px 8px;
   }
