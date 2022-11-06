@@ -15,6 +15,9 @@ body {
       // font-family: 'Ubuntu', sans-serif;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
+      @media screen and (max-width:766px) {
+        font-size: 14px;
+      }
     }
   
 }
