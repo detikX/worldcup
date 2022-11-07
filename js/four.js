@@ -25,7 +25,7 @@ $('.slider').slick({
     infinite: false,
     speed: 300,
     slidesToShow: 3.2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
