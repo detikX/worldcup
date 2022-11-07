@@ -1016,9 +1016,9 @@ body {
     }
   }
 }
-#nav {
-  display: none !important;
-}
+// #nav {
+//   display: none !important;
+// }
 
 .titlesub {
   // background: #aa278d;
@@ -1029,6 +1029,9 @@ body {
   width: fit-content;
   margin: 0 auto;
   top: 16px;
+  @media screen and (max-width:766px) {
+    width: 80%;
+  }
   h2 {
     position: relative;
     width: fit-content;
@@ -1428,4 +1431,15 @@ body {
       }
     }
   }
+}
+
+.color{
+  &-white {
+    color: white;
+  }
+}
+
+.jejak {
+  overflow-x: clip;
+  position: relative;
 }
