@@ -36,6 +36,7 @@
 .h--timeline-dates{
     position:relative;
     height:100%;
+    color: #c8c8c8;
     margin:0 40px;
     overflow:hidden;
 }
@@ -55,11 +56,11 @@
 }
 .h--timeline-dates::before{
     left:0;
-    background:linear-gradient(to right, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0));
+    background: linear-gradient(to right, #572d7a, rgba(255, 255, 255, 0));
 }
 .h--timeline-dates::after{
     right:0;
-    background:linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0));
+    background: linear-gradient(to left, #572d7a, transparent);
     @media screen and (max-width:766px) {
         right: 10%;
         background: transparent;
@@ -142,9 +143,9 @@
     z-index:2;
     text-align:center;
     font-size:.8rem;
-    font-weight: 600;
+    // font-weight: 600;
     padding-bottom:0.75rem;
-    color:#000;
+    color:#fff;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -291,7 +292,9 @@
     max-width:800px;
     margin:2rem auto 0;
 	padding: 2rem;
-	border: 1px solid #f7f7f7;
+	// border: 1px solid #f7f7f7;
+    border-color: transparent;
+    background: transparent;
 	border-radius: 5px;
 	box-shadow: 0 0 50px 0 rgba(0,0,0,.1);
     position: relative;
@@ -351,7 +354,8 @@
     animation-direction:reverse;
 }
 .h--timeline-event-title{
-    color:#000;
+    color: white;
+    text-shadow: 2px 2px black;
     font-size:3rem;
     margin: 0;
     font-weight:600;
@@ -450,10 +454,10 @@
     bottom:37px;
 }
 .h--timeline-line li:nth-child(even) .h--timeline-date::before{
-    bottom:45px;
+    bottom: 43px;
 }
 .h--timeline-line li:nth-child(odd) .h--timeline-date:hover::before,
 .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before{
-    bottom:-3px;
+    bottom: -5px;
 }
 /**/
