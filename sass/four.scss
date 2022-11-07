@@ -645,9 +645,9 @@ body {
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         @media screen and (max-width:766px) {
-          object-fit: cover;
+          object-fit: contain;
         }
       }
     }
@@ -773,8 +773,17 @@ body {
 
 body {
   .modal-content {
-    background: transparent;
+    // background: transparent;
     border-color: transparent;
+    .contentx {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      h2,p,h3,div {
+        color: #260032;
+      }
+      
+    }
   }
 }
 
@@ -983,7 +992,11 @@ body {
     color: #572d7a;
     display: block;
     z-index: 99;
+    font-size: 3rem;
     font-style: italic;
+    @media screen and (max-width:766px) {
+      font-size: 2rem;
+    }
     &::before {
       content: "";
       position: absolute;

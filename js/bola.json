@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "tahun": 1966,
+        "data-start":"16/01/1930",
+        "negara":"Inggris",
+        "maskot":"Willie Si Singa Jantan",
+        "bola":"Challenge 4-Star",
+        "img":"img/bola/1966.JPG"
+    },
+
+    {
+        "id":2,
+        "tahun": 1970,
+        "data-start":"16/01/1930",
+        "negara":"Inggris",
+        "maskot":"Willie Si Singa Jantan",
+        "bola":"Challenge 4-Star",
+        "img":"img/bola/1966.JPG"
+    },
+
+    {
+        "id":3,
+        "tahun": 1970,
+        "data-start":"16/01/1930",
+        "negara":"Inggris",
+        "maskot":"Willie Si Singa Jantan",
+        "bola":"Challenge 4-Star",
+        "img":"img/bola/1966.JPG"
+    }
+    
+]

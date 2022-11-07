@@ -93,6 +93,61 @@ $('.slider').slick({
     ]
   });
 
+  
+  // $.ajax({
+  //   url: "js/bola.json",
+  //   type: "GET",
+  //   // beforeSend: function () {
+  //   //   $(".loader_ajax").show();
+  //   //   // $(".thumbs").hide();
+  //   // },
+  //   // complete: function () {
+  //   //   $(".loader_ajax").hide();
+  //   //   // $(".thumbs").show();
+  //   // },
+  //   success:(response)=>{
+  //     console.log(response);
+
+  //     // var name_id = $(".maskot__image").attr("data-target")
+  //     // $(document).on('click','.maskot__image[data-target="#modalBola"]',function(){
+  //     //   var dataID =$(this).attr("data-target");
+  //     //   // alert(dataID)
+  //     //   $("#image-maskot .modal-content").html(`
+  //     //                 <div class="modal-body">
+  //     //                    <div class="modal-image">
+  //     //                      ${dataID}
+  //     //                    </div>
+  //     //                </div>
+  //     //            `);
+  //     // })
+  //     // $(".maskot__image").on('click',function(){
+  //     //   var dataID =$(this).attr("data-target");
+  //     //   $("#image-maskot .modal-content").html(`
+  //     //                <div class="modal-body">
+  //     //                   <div class="modal-image">
+  //     //                     ${dataID}
+  //     //                   </div>
+  //     //               </div>
+  //     //           `);
+  //     // })
+
+  //   }
+  // })
+  // $("#image-foto .modal-body").html("")
+  // $(".listing[data-target='#image-foto']").on('click', function(i,x) {
+  //     $('#image-foto').modal('show')
+  //     var data = $(this).attr("data-help");
+
+  //     $("#image-foto .modal-content").html(`
+  //             <div class="modal-body">
+  //                 <div class="modal-image">
+  //                     <img src=${i.target.src} />
+  //                 </div>
+  //             </div>
+  //         `);
+  // })
+
+
 $(".h--timeline-date").click(function(){
   $(".helping_").fadeOut();
 })
