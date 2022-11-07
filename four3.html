@@ -28,6 +28,9 @@
 <body>
       
         <section class="banner">
+          <div hidden>
+            <h1>Tes Piala Dunia</h1>
+          </div>
           <h2 class="the-title" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200">Pesta Bola Dunia di Negeri Minyak</h2>
           <!-- <h2 class="the-title">Pesta Bola Dunia</h2>
           <h2 class="the-title bottomx">di Negeri Minyak</h2> -->
@@ -541,7 +544,7 @@
   <div class="cek-width">
     <div class="card endtrigger card--reverse" id="card1" style="overflow-x: hidden;">
       <div class="card__img-holder">
-        <div class="slider">
+        <div class="sliderx">
           <div class="maskot__image" data-toggle="modal" data-target="#eng1966">
             <img src="img/maskot/1966.png" alt="">
             
@@ -1802,10 +1805,6 @@
 
         </div>
       </div>
-      
-      <!-- <footer>
-        <h2>This is the end</h2>
-      </footer> -->
 
       <!-- modal maskot -->
       <div class="modal fade" id="eng1966" tabindex="-1" role="dialog" aria-labelledby="1966Label" aria-hidden="true">
@@ -2074,103 +2073,7 @@
       <script src="js/timeline.js"></script>
 
       <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        var targetsEndTrigger = document.querySelectorAll(".endtrigger");
-
-        var targetsHeight = document.querySelectorAll(".height");
-
-        var targetsBreak = document.querySelectorAll(".break");
-
-        targetsEndTrigger.forEach((target, index) => {
-          const pinSpacing = index === targetsEndTrigger.length - 1 ? "true" : false;
-          const endTrigger = `#card${index + 1}`
-          const opacityFirst = index === 0 ? 1 : 0;
-          const opacitySecond = index === targetsEndTrigger.length - 1 ? 1 : 0;
-          const tl = gsap
-            .timeline({
-              defaults: { duration: 1 },
-              scrollTrigger: {
-                trigger: target,
-                pin: true,
-                scrub: true,
-                start: "center center",
-                // end,
-                endTrigger,
-                markers: false,
-                toggleActions: "restart none reverse reset",
-                pinSpacing,
-              },
-            })
-            .from(target, { opacity: opacityFirst, duration: 0.5 }, 0)
-            .to(target, { opacity: opacitySecond, duration: 0.5 }, 0.8);
-        });
-
-        targetsHeight.forEach((target, index) => {
-          const pinSpacing = index === targetsHeight.length - 1 ? "true" : false;
-          const end =
-            index === targetsHeight.length - 1
-              ? `+=${target.offsetHeight}px`
-              : `+=${targetsHeight[index + 1].offsetHeight}px`;
-          const opacityFirst = index === 0 ? 1 : 0;
-          const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
-          const tl = gsap
-            .timeline({
-              defaults: { duration: 1 },
-              scrollTrigger: {
-                trigger: target,
-                pin: true,
-                scrub: true,
-                start: "center center",
-                end,
-                markers: false,
-                toggleActions: "restart none reverse reset",
-                pinSpacing,
-              },
-            })
-            .from(target, { opacity: opacityFirst, duration: 0.5 }, 0)
-            .to(target, { opacity: opacitySecond, duration: 0.5 }, 0.8);
-        });
-
-        targetsBreak.forEach((target, index) => {
-          const pinSpacing = index === targetsBreak.length - 1 ? "true" : false;
-          const end =
-            index === targetsBreak.length - 1
-              ? `+=${target.offsetHeight}px`
-              : `+=${targetsBreak[index + 1].offsetHeight}px`;
-          const opacityFirst = index === 0 ? 1 : 0;
-          const opacitySecond = index === targetsBreak.length - 1 ? 1 : 0;
-          const tl = gsap
-            .timeline({
-              defaults: { duration: 1 },
-              scrollTrigger: {
-                trigger: target,
-                pin: true,
-                scrub: true,
-                start: "center center",
-                end,
-                markers: false,
-                toggleActions: "restart none reverse reset",
-                pinSpacing,
-              },
-            })
-            .from(target, { opacity: opacityFirst, duration: 0.5 }, 0)
-            .to(target, { opacity: opacitySecond, duration: 0.5 }, 0.8);
-        });
-
-        //fancy box
-        $('[data-fancybox="gallery"]').fancybox({
-          buttons: [
-            "slideShow",
-            "thumbs",
-            "zoom",
-            "fullScreen",
-            "share",
-            "close"
-          ],
-          loop: false,
-          protect: true
-        });
+        
 
       </script>
 </body>
