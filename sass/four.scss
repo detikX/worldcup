@@ -287,6 +287,10 @@ h3 {
       // background: linear-gradient(to bottom, #fafafa, white);
       position: relative;
       z-index: 99;
+      transition: .3s;
+      &:hover {
+        background: rgba($color: white, $alpha: .3);
+      }
       &::before {
         content: "";
         position: absolute;
@@ -414,8 +418,12 @@ body {
   }
   h2 {
     font-size: 52px;
+    line-height: 52px;
+    margin-bottom: 16px;
     @media screen and (max-width:766px) {
       font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 8px;
     }
   }
   .card__text {
