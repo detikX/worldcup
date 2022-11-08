@@ -1024,7 +1024,7 @@ body {
   z-index: 121 !important;
 }
 .share_icon {
-  color: white;
+  color: white !important;
 }
 .titlesub {
   // background: #aa278d;
@@ -1425,6 +1425,7 @@ body {
     li {
       padding: 4px 8px;
       list-style: none;
+      font-size: 1rem;
       border-bottom: 1px solid rgba(white,.2);
       @media screen and (min-width:1440px) {
         font-size: 1.5em;
