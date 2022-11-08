@@ -1463,3 +1463,13 @@ body {
     }
   }
 }
+
+.bungkus {
+  background: linear-gradient(to bottom, rgba(white,.2), rgba(white,.1));
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 16px;
+  p {
+    margin-bottom: 0;
+  }
+}
