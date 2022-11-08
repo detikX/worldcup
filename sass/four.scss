@@ -1016,10 +1016,16 @@ body {
     }
   }
 }
-// #nav {
-//   display: none !important;
-// }
-
+#nav {
+  background: transparent !important;
+  z-index: 120 !important;
+}
+#search {
+  z-index: 121 !important;
+}
+.share_icon {
+  color: white;
+}
 .titlesub {
   // background: #aa278d;
   padding: 16px;
