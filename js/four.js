@@ -252,3 +252,7 @@ $('.sliderx').slick({
 $(".h--timeline-date").click(function(){
   $(".helping_").fadeOut();
 })
+
+$(".maskot__image").click(function(){
+  $(".sliderx__help").fadeOut()
+})

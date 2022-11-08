@@ -357,6 +357,46 @@ h3 {
 .slick-slide {
     margin: 0 8px;
 }
+#card1 {
+  .card__img-holder {
+    position: relative;
+  }
+  @keyframes MoveUpDownx {
+    0%, 100% {
+        bottom: 5%;
+    }
+    50% {
+        bottom: 6%;
+    }
+  }
+  .sliderx {
+    &__help {
+      position: absolute;
+      bottom: 5%;
+      background: rgba($color: white, $alpha: .2);
+      left: 20%;
+      padding: 4px;
+      animation: MoveUpDownx .5s linear infinite;
+      font-size: 12px;
+      @media screen and (max-width:766px) {
+        left: 35%;
+      }
+      &::before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: auto;
+        right: 31px;
+        top: -24px;
+        border: 12px solid;
+        border-color: transparent rgba(255,255,255,.2) transparent transparent;
+        transform: rotate(90deg);
+    }
+    }
+  }
+  
+}
 
 /* the parent */
 .slick-list {
