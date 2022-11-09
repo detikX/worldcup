@@ -653,6 +653,23 @@ body {
   position: relative;
   overflow-x: clip;
   margin-top: 52px;
+  &::before {
+    // content: "";
+    // position: fixed;
+    // right: 0;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // z-index: 2;
+    // background-repeat: no-repeat;
+    // opacity: .03;
+    // background-size: cover;
+    // background: url(../img/dotted.png);
+
+  }
+  .card__text {
+    position: relative;
+  }
   h2 {
     font-size: 2.5rem;
     @media screen and (max-width:766px) {
@@ -1160,7 +1177,10 @@ body {
 }
 
 .juara-dunia {
-  overflow-x: hidden;
+  overflow-x: clip;
+  position: relative;
+  background: #572d7a;
+  z-index: 9;
   // display: none;
   .negara {
     width: 240px; height:300px; display: inline-block;
