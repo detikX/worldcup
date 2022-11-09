@@ -26,9 +26,16 @@ body {
   
 }
 
+.opening {
+  background: #572d7a;
+  position: relative;
+  z-index: 66;
+}
+
 .banner {
   height: 100vh;
   position: relative;
+  z-index: 66;
   &::after {
     content: "";
     position: absolute;
@@ -209,6 +216,8 @@ h3 {
     width: 860px;
     margin: 0 auto;
     display: block;
+    position: relative;
+    z-index: 65;
     @media screen and (min-width:1500px) {
       width: 1080px;
     }
@@ -221,6 +230,8 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    z-index: 67;
     padding: 60px;
     @media screen and (max-width:766px) {
         padding: 8px;
@@ -262,13 +273,24 @@ h3 {
   .card__text {
     width: 50vw;
     padding: 16px;
+    position: relative;
+    z-index: 67;
       @media screen and (max-width:766px) {
         width: auto;
       }
   }
+  .cek-width {
+    background: #572d7a;
+    position: relative;
+    z-index: 66;
 
+  }
+  .h--timeline {
+    background: #572d7a;
+    position: relative;
+    z-index: 66;
+  }
   .maskot {
-    
     &__image {
       .tahun {
         position: absolute;
@@ -649,24 +671,27 @@ body {
     bottom: 62px;
   }
 }
+.fixed-bgx {
+  content: "";
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: .15;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .top-skorer {
   position: relative;
   overflow-x: clip;
   margin-top: 52px;
-  &::before {
-    // content: "";
-    // position: fixed;
-    // right: 0;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // z-index: 2;
-    // background-repeat: no-repeat;
-    // opacity: .03;
-    // background-size: cover;
-    // background: url(../img/dotted.png);
-
-  }
   .card__text {
     position: relative;
   }
@@ -1246,6 +1271,7 @@ body {
   padding: 32px 0;
   background: #37003c;
   position: relative;
+  z-index: 66;
   &::before {
     position: absolute;
       top: -25px;
@@ -1338,6 +1364,8 @@ body {
 .last-show {
   overflow-x: clip;
   padding-bottom: 64px;
+  position: relative;
+  z-index: 66;
   &__all {
     display: block;
     .image {
@@ -1528,7 +1556,9 @@ body {
 
 .jejak {
   overflow-x: clip;
+  background: #572d7a;
   position: relative;
+  z-index: 66;
   &__img {
     width: 650px;
     height: auto;
