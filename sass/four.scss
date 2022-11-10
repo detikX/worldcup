@@ -16,6 +16,7 @@ body {
     p {
       font-size: 16px;
       line-height: inherit;
+      margin-bottom: 0;
       // font-family: 'Ubuntu', sans-serif;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -29,13 +30,18 @@ body {
 .opening {
   background: #572d7a;
   position: relative;
-  z-index: 66;
+  z-index: 93;
+  padding: 16px 0;
+  
+  p {
+    margin-bottom: 16px;
+  }
 }
 
 .banner {
   height: 100vh;
   position: relative;
-  z-index: 66;
+  z-index: 93;
   &::after {
     content: "";
     position: absolute;
@@ -83,8 +89,10 @@ h3 {
 .theme-song {
   // display: none;
   position: relative;
-  z-index: 57;
+  z-index: 93;
   background: #572d7a;
+  background-image: url('../img/bg-song.png');
+  background-attachment: fixed;
   
   .card {
     // border: 1px solid;
@@ -260,7 +268,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    z-index: 67;
+    z-index: 93;
     padding: 60px;
     @media screen and (max-width:766px) {
         padding: 8px;
@@ -311,13 +319,13 @@ h3 {
   .cek-width {
     background: #572d7a;
     position: relative;
-    z-index: 66;
+    // z-index: 93;
 
   }
   .h--timeline {
     background: #572d7a;
     position: relative;
-    z-index: 66;
+    z-index: 93;
   }
   .maskot {
     &__image {
@@ -493,14 +501,19 @@ body {
 
 
 
-
-.moments{
+.o-hidden {
   // overflow-x: hidden;
   position: relative;
-  // background: #343232;
-  z-index: 60;
+  z-index: 91;
+}
+.moments{
+  position: relative;
+  // background-image: url(../img/testetst.png) !important;
+  z-index: 88;
   background: #617fbf;
   overflow-x: clip;
+  // background-size: contain;
+  // background-attachment: fixed;
   &::before {
     content: "";
     position: absolute;
@@ -538,9 +551,7 @@ body {
       height: 32px;
     }
   }
-  .o-hidden {
-    // overflow-x: hidden;
-  }
+  
   h2 {
     font-size: 52px;
     line-height: 52px;
@@ -644,6 +655,8 @@ body {
 .piala-dunia-qatar {
   overflow-x: clip;
   position: relative;
+  z-index: 93;
+  background: #572d7a;
   &__img {
     position: absolute;
     left: 0;
@@ -708,7 +721,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
   opacity: .15;
   width: 100%;
   height: 100%;
@@ -875,11 +888,14 @@ body {
   }
   .image {
     width: 100%;
-    height: 100%;
+    height: 420px;
+    @media screen and (max-width:766px) {
+      width: 250px;
+    }
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -889,6 +905,14 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
+  }
+  .slick-next,.slick-prev {
+    bottom: initial;
+    top: 30%;
+  }
+  .slick-next {
+    right: 0;
+    left: initial;
   }
   .card {
     display: inline-block;
@@ -1291,7 +1315,7 @@ body {
   overflow-x: clip;
   position: relative;
   background: #572d7a;
-  z-index: 9;
+  z-index: 93;
   // display: none;
   .negara {
     width: 240px; height:300px; display: inline-block;
@@ -1338,7 +1362,7 @@ body {
   padding: 32px 0;
   background: #37003c;
   position: relative;
-  z-index: 66;
+  z-index: 93;
   &::before {
     position: absolute;
       top: -25px;
@@ -1432,7 +1456,7 @@ body {
   overflow-x: clip;
   padding-bottom: 64px;
   position: relative;
-  z-index: 66;
+  z-index: 93;
   &__all {
     display: block;
     .image {
@@ -1625,7 +1649,19 @@ body {
   overflow-x: clip;
   background: #572d7a;
   position: relative;
-  z-index: 66;
+  z-index: 93;
+  padding: 16px 0;
+  &:after {
+    position: absolute;
+    bottom: -24px;
+    left: -8px;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    content: "";
+    background: #572d7a;
+    transform: skew(4deg, 2deg);
+  }
   &__img {
     width: 650px;
     height: auto;
@@ -1655,6 +1691,7 @@ body {
 .data_{
   table {
     border-collapse:collapse;
+    margin-top: 16px;
     tr {
       border-bottom: 1px solid rgba($color: white, $alpha: .2);
       &:last-child {
@@ -1666,6 +1703,7 @@ body {
   td {
     // border-bottom: 1px solid rgba($color: white, $alpha: .2);
     border-top: 1px solid transparent;
+    padding: .25rem .75rem;
     color: #bbb;
     // background: linear-gradient(to top, rgba(white,.2), rgba(white,.4));
     &:last-child{
