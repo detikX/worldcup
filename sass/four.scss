@@ -30,18 +30,26 @@ body {
 .opening {
   background: #572d7a;
   position: relative;
+  // background-image: url("../img/testetst1") !important;
   z-index: 93;
+  background-attachment: fixed;
+  background-size: contain;
   padding: 16px 0;
   
   p {
     margin-bottom: 16px;
   }
 }
-
+// .o-3 {
+//   opacity: .2 !important;
+// }
 .banner {
   height: 100vh;
   position: relative;
-  z-index: 93;
+  z-index: 99;
+  @media screen and (max-width:766px) {
+    height: 60vh;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -72,8 +80,8 @@ body {
     }
     &.the-title {
       font-size: 72px;
-      text-shadow: 1px 1px white;
-      color: #6e1e46;
+      text-shadow: 1px 1px #6e1e46;
+      color: #bbb;
       @media screen and (max-width:766px) {
         font-size: 48px;
       }
@@ -91,7 +99,7 @@ h3 {
   position: relative;
   z-index: 93;
   background: #572d7a;
-  background-image: url('../img/bg-song.png');
+  background-image: url('../img/bg-song.webp');
   background-attachment: fixed;
   
   .card {
@@ -326,6 +334,9 @@ h3 {
     background: #572d7a;
     position: relative;
     z-index: 93;
+    background-image: url("../img/testetst1") !important;
+    background-attachment: fixed;
+    background-size: contain;
   }
   .maskot {
     &__image {
