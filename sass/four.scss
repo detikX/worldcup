@@ -100,6 +100,7 @@ h3 {
   z-index: 93;
   background: #572d7a;
   background-image: url('../img/bg-song.webp');
+  // background-image: url("../img/testetst1.png");
   background-attachment: fixed;
   
   .card {
@@ -668,6 +669,7 @@ body {
   position: relative;
   z-index: 93;
   background: #572d7a;
+  // background: #617fbf;;
   &__img {
     position: absolute;
     left: 0;
@@ -678,6 +680,12 @@ body {
   .pembukaan {
     position: relative;
     z-index: 9;
+    background-image: url('../img/testetst1.png');
+    background-size: contain;
+    // background: #5454d4;
+    // background-image: url('../img/gurun.jpg');
+  // background-image: url("../img/testetst1.png");
+  background-attachment: fixed;
   }
 }
 .moments,.peserta {
@@ -896,6 +904,19 @@ body {
       margin: 8px;
       height: 320px;
     }
+    .wrapping-all {
+      text-align: left;
+      margin-top: 8px;
+      .labelx {
+        margin-bottom: 4px;
+        .stad {
+          color: white;
+          &::before {
+            content: "Stadion "
+          }
+        }
+      }
+    }
   }
   .image {
     width: 100%;
@@ -920,6 +941,7 @@ body {
   .slick-next,.slick-prev {
     bottom: initial;
     top: 30%;
+    z-index: 102;
   }
   .slick-next {
     right: 0;
@@ -1326,6 +1348,9 @@ body {
   overflow-x: clip;
   position: relative;
   background: #572d7a;
+  // background: #617fbf;
+  // background-image: url('../img/icons.webp') !important;
+  // background-attachment: fixed;
   z-index: 93;
   // display: none;
   .negara {
@@ -1661,10 +1686,29 @@ body {
   background: #572d7a;
   position: relative;
   z-index: 93;
+  // background-image: url('../img/icons.webp') !important;
+  // background-attachment: fixed;
   padding: 16px 0;
+  .kotakan {
+    background: linear-gradient(to top, rgba(255,255,255,.12),rgba(255,255,255,.05));
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
   &:after {
     position: absolute;
     bottom: -24px;
+    left: -8px;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    content: "";
+    background: #572d7a;
+    transform: skew(4deg, 2deg);
+  }
+  &:before {
+    position: absolute;
+    top: -24px;
     left: -8px;
     right: 0;
     width: 100%;
