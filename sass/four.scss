@@ -1744,8 +1744,8 @@ body {
 }
 
 .bungkus {
-  background: linear-gradient(to bottom, rgba(#572d7a,.5), rgba(255, 255, 255, 0.1));
-  // background: rgba($color: #572d7a, $alpha: .8);
+  // background: linear-gradient(to bottom, rgba(#572d7a,.5), rgba(255, 255, 255, 0.1));
+  background: radial-gradient(circle,rgba(#572d7a,.5), rgba(255, 255, 255, 0.1));
   border-radius: 8px;
   margin-bottom: 8px;
   padding: 16px;
