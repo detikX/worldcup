@@ -298,6 +298,9 @@
 	border-radius: 5px;
 	box-shadow: 0 0 50px 0 rgba(0,0,0,.1);
     position: relative;
+    @media screen and (max-width:766px) {
+        background: rgba($color: #572d7a, $alpha: .15);
+    }
     .flag {
         position: absolute;
         right: 0;
