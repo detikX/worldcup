@@ -202,6 +202,7 @@ $('.sliderx').slick({
     autoplay:false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1024,

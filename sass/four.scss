@@ -909,6 +909,9 @@ body {
       margin-top: 8px;
       .labelx {
         margin-bottom: 4px;
+        p {
+          margin-bottom: 8px;
+        }
         .stad {
           color: white;
           &::before {
@@ -946,6 +949,9 @@ body {
     bottom: initial;
     top: 30%;
     z-index: 102;
+    @media screen and (max-width:766px) {
+      top: 250px;
+    }
   }
   .slick-next {
     right: 0;
