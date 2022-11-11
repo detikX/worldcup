@@ -939,24 +939,42 @@ body {
   }
 }
 
+.group {
+  .slick-next,.slick-prev {
+    // bottom: initial;
+    top: initial;
+    z-index: 102;
+    @media screen and (max-width:766px) {
+      // top: 250px;
+    }
+  }
+  .slick-next {
+    right: 0;
+    // left: initial;
+  }
+}
+
 .stadion {
   .wraps {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
-  .slick-next,.slick-prev {
-    bottom: initial;
-    top: 30%;
-    z-index: 102;
-    @media screen and (max-width:766px) {
-      top: 250px;
+  .stadion-slide {
+    .slick-next,.slick-prev {
+      bottom: initial;
+      top: 30%;
+      z-index: 102;
+      @media screen and (max-width:766px) {
+        top: 250px;
+      }
+    }
+    .slick-next {
+      right: 0;
+      left: initial;
     }
   }
-  .slick-next {
-    right: 0;
-    left: initial;
-  }
+  
   .card {
     display: inline-block;
     width: 45%;
