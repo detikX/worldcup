@@ -667,7 +667,7 @@ body {
 .piala-dunia-qatar {
   overflow-x: clip;
   position: relative;
-  z-index: 93;
+  // z-index: 93;
   background: #572d7a;
   // background: #617fbf;;
   &__img {
@@ -680,12 +680,12 @@ body {
   .pembukaan {
     position: relative;
     z-index: 9;
-    background-image: url('../img/testetst1.png');
-    background-size: contain;
+    // background-image: url('../img/testetst1.png');
+    // background-size: contain;
     // background: #5454d4;
     // background-image: url('../img/gurun.jpg');
   // background-image: url("../img/testetst1.png");
-  background-attachment: fixed;
+  // background-attachment: fixed;
   }
 }
 .moments,.peserta {
