@@ -602,7 +602,7 @@ body {
     p {
       @media screen and (min-width:1900px) {
         font-size: 1.2em;
-        line-height: 42px;
+        line-height: auto;
       }
     }
     &::before {
