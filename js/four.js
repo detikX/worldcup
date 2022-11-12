@@ -105,6 +105,7 @@ $(".scroll-totop").hide();
 					$('.scroll-totop').fadeIn();
 				} else {
 					$('.scroll-totop').fadeOut();
+          startCount();
 				}
 			});
 			// scroll body to 0px on click
