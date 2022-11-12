@@ -312,7 +312,7 @@ function isScrolledIntoView($elem) {
 	            setTimeout(function () {
 	                $this.data("isCounting", false);
 	                count($this);
-	            }, 30);
+	            }, 20);
 	        }
 	    }
 

@@ -69,25 +69,43 @@ body {
       object-fit: cover;
     }
   }
-  h1,h2 {
+  .judul {
     position: absolute;
-    left: 50%;
-    top: 5%;
-    font-family: 'Amaranth' !important;
+    left: 60%;
+    top: 25%;
+    @media screen and (max-width:766px) {
+      left: 25%;
+      top: initial;
+      bottom: 12%;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-family: 'Montserrat' !important;
+      @media screen and (max-width:766px) {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px black;
+      }
+    }
+  }
+  h1,h2 {
+    // position: absolute;
+    // left: 50%;
+    // top: 5%;
+    // font-family: 'Amaranth' !important;
     font-weight: 700;
-    color: white;
+    // color: white;
     @media screen and (max-width:766px) {
       left: 3%;
     }
-    &.the-title {
-      font-size: 72px;
-      text-shadow: 1px 1px #6e1e46;
-      color: #bbb;
-      @media screen and (max-width:766px) {
-        font-size: 48px;
-      }
-    }
-}
+    // &.the-title {
+    //   font-size: 72px;
+    //   text-shadow: 1px 1px #6e1e46;
+    //   color: #bbb;
+    //   @media screen and (max-width:766px) {
+    //     font-size: 48px;
+    //   }
+    // }  
+  }
 }
 
 h3 {
@@ -226,13 +244,14 @@ h3 {
   padding: 32px 0;
 
 }
+
   
   h2 {
     font-weight: 700;
-    font-size: 2rem;
+    // font-size: 2rem;
     padding: 0;
     margin: 4px 0;
-    font-family: 'Amaranth' !important;
+    font-family: 'Amaranth' ;
   }
   .font {
     &-small {
@@ -717,12 +736,20 @@ body {
 }
 
 #shiva {
-  position: absolute;
-  right: 30%;
-  top: 50%;
-  font-size: 5rem;
+  // position: absolute;
+  // right: 30%;
+  // top: 50%;
+  font-size: 9rem;
   // color: white;
   font-weight: bold;
+  color: #efbd2d;
+  line-height: 9rem;
+  text-shadow: 2px 2px black;
+  @media screen and (max-width:766px) {
+    font-size: 5rem;
+    line-height: 5rem;
+    
+  }
 }
 
 .scroll-totop {
