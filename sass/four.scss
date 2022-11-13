@@ -948,24 +948,25 @@ body {
       background: rgba(255,255,255,.07);
       padding: 24px;
       position: relative;
-      &::after{
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 80px;
-        height: 1px;
-        background: white;
-      }
-      &::before{
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 120px;
-        width: 1px;
-        background: white;
-      }
+      border-left: 2px solid rgba($color: white, $alpha: .3);
+      // &::after{
+      //   content: "";
+      //   position: absolute;
+      //   right: 0;
+      //   top: 0;
+      //   width: 80px;
+      //   height: 1px;
+      //   background: white;
+      // }
+      // &::before{
+      //   content: "";
+      //   position: absolute;
+      //   right: 0;
+      //   top: 0;
+      //   bottom: 120px;
+      //   width: 1px;
+      //   background: white;
+      // }
       @media screen and (max-width:766px) {
         padding: 8px;
         
