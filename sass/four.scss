@@ -787,6 +787,9 @@ body {
         width: 100%;
         height: 240px;
       }
+      @media screen and (max-width:330px) {
+        height: 200px;
+      }
     }
     &__text {
       @media screen and (max-width:766px) {
