@@ -1494,7 +1494,18 @@ body {
   .negara {
     width: 240px; height:300px; display: inline-block;
     position: relative;
-    
+    .nama-negara {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      // height: 80px;
+      // width: 100px;
+      font-size: 14px;
+      padding: 4px;
+      font-weight: bold;
+      // background: white;
+      color: black;
+    }
     .tahun-juara {
       position: absolute;
       overflow: hidden;

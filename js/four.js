@@ -346,3 +346,21 @@ function isScrolledIntoView($elem) {
           // glare: true,
         });
       })
+
+
+      // let bg = document.getElementById("std");
+      // let road = document.getElementById("ply");
+
+      // window.addEventListener("scroll", function () {
+      //   var value = window.scrollY;
+      //   // console.log("value", value);
+      //   bg.style.top = value * 0.5 + "px";
+      //   // moon.style.bottom = -value + 10 + "%";
+      //   // moon.style.left = -value + 5 + "%";
+      //   // moon.style.transform = scale(1.2);
+      //   // mountain.style.bottom = -value + 10 + "%";
+      //   road.style.bottom = value * 0.05 + "px";
+      //   // console.log(".bg.style.top", bg.style.top);
+      //   // console.log("moon.style.top", moon.style.top);
+      //   // text.style.top = value * 1 + "px";
+      // });
