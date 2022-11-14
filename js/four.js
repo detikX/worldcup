@@ -330,4 +330,19 @@ function isScrolledIntoView($elem) {
 	    };
       $(document).ready(function(){
         startCount();
+
+        const tilt = $(".js-tilt").tilt();
+        // tilt.on("change", callback); // parameters: event, transforms
+        // tilt.on("tilt.mouseLeave", callback); // parameters: event
+        // tilt.on("tilt.mouseEnter", callback); // parameters: event
+
+        $(".js-tilt").tilt({
+          max: 30,
+          speed: 600,
+          scale: 1,
+          transition: true,
+          // easing: "cubic-bezier(.03,.98,.52,.99)",
+          perspective: 600,
+          // glare: true,
+        });
       })
