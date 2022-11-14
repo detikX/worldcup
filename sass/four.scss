@@ -992,6 +992,12 @@ body {
         }
         .stad {
           color: white;
+          font-size: 2.2rem;
+          font-weight: bold;
+          text-shadow: 2px 2px #000;
+          @media screen and (max-width:766px) {
+            font-size: 1.8rem;
+          }
           &::before {
             content: "Stadion "
           }
@@ -1455,8 +1461,9 @@ body {
   position: relative;
   background: #572d7a;
   // background: #617fbf;
-  // background-image: url('../img/icons.webp') !important;
-  // background-attachment: fixed;
+  background-image: url('../img/testetst1.png') !important;
+  background-attachment: fixed;
+  background-size: contain;
   z-index: 93;
   // display: none;
   .negara {
