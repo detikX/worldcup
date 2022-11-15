@@ -246,6 +246,7 @@ $(".maskot__image").click(function(){
 //   transition: true,
 //   perspective: 600,
 // });
+$(".count").addClass("dedi")
 function isScrolledIntoView($elem) {
   var docViewTop = $(window).scrollTop();
   var docViewBottom = docViewTop + $(window).height();
@@ -279,4 +280,5 @@ function count($this) {
   };
   $(document).ready(function(){
     startCount();
+    $(".count").addClass("muter")
   })

@@ -2052,3 +2052,18 @@ body {
     display: block;
   }
 }
+
+#perbesar {
+  .modal-content {
+    background: transparent;
+    .trp {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
