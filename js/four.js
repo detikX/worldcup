@@ -229,66 +229,8 @@ $('.sliderx').slick({
           adaptiveHeight: true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
-
-  
-  // $.ajax({
-  //   url: "js/bola.json",
-  //   type: "GET",
-  //   // beforeSend: function () {
-  //   //   $(".loader_ajax").show();
-  //   //   // $(".thumbs").hide();
-  //   // },
-  //   // complete: function () {
-  //   //   $(".loader_ajax").hide();
-  //   //   // $(".thumbs").show();
-  //   // },
-  //   success:(response)=>{
-  //     console.log(response);
-
-  //     // var name_id = $(".maskot__image").attr("data-target")
-  //     // $(document).on('click','.maskot__image[data-target="#modalBola"]',function(){
-  //     //   var dataID =$(this).attr("data-target");
-  //     //   // alert(dataID)
-  //     //   $("#image-maskot .modal-content").html(`
-  //     //                 <div class="modal-body">
-  //     //                    <div class="modal-image">
-  //     //                      ${dataID}
-  //     //                    </div>
-  //     //                </div>
-  //     //            `);
-  //     // })
-  //     // $(".maskot__image").on('click',function(){
-  //     //   var dataID =$(this).attr("data-target");
-  //     //   $("#image-maskot .modal-content").html(`
-  //     //                <div class="modal-body">
-  //     //                   <div class="modal-image">
-  //     //                     ${dataID}
-  //     //                   </div>
-  //     //               </div>
-  //     //           `);
-  //     // })
-
-  //   }
-  // })
-  // $("#image-foto .modal-body").html("")
-  // $(".listing[data-target='#image-foto']").on('click', function(i,x) {
-  //     $('#image-foto').modal('show')
-  //     var data = $(this).attr("data-help");
-
-  //     $("#image-foto .modal-content").html(`
-  //             <div class="modal-body">
-  //                 <div class="modal-image">
-  //                     <img src=${i.target.src} />
-  //                 </div>
-  //             </div>
-  //         `);
-  // })
-
 
 $(".h--timeline-date").click(function(){
   $(".helping_").fadeOut();
@@ -297,6 +239,13 @@ $(".h--timeline-date").click(function(){
 $(".maskot__image").click(function(){
   $(".sliderx__help").fadeOut()
 })
+$(".js-tilt").tilt({
+  max: 30,
+  speed: 600,
+  scale: 1,
+  transition: true,
+  perspective: 600,
+});
 function isScrolledIntoView($elem) {
   var docViewTop = $(window).scrollTop();
   var docViewBottom = docViewTop + $(window).height();
@@ -305,62 +254,29 @@ function isScrolledIntoView($elem) {
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-    function count($this) {
-	        var current = parseInt($this.html(), 10);
-	        if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
-	            $this.html(++current);
-	            $this.data("isCounting", true);
-	            setTimeout(function () {
-	                $this.data("isCounting", false);
-	                count($this);
-	            }, 20);
-	        }
-	    }
+function count($this) {
+      var current = parseInt($this.html(), 10);
+      if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
+          $this.html(++current);
+          $this.data("isCounting", true);
+          setTimeout(function () {
+              $this.data("isCounting", false);
+              count($this);
+          }, 20);
+      }
+  }
 
-	    $(".count").each(function () {
-	        $(this).data('count', parseInt($(this).html(), 10));
-	        $(this).html('1930');
-	        $(this).data("isCounting", false);
-	    });
+  $(".count").each(function () {
+      $(this).data('count', parseInt($(this).html(), 10));
+      $(this).html('1930');
+      $(this).data("isCounting", false);
+  });
 
-	    function startCount() {
-	        $(".count").each(function () {
-	            count($(this));
-	        });
-	    };
-      $(document).ready(function(){
-        startCount();
-
-        const tilt = $(".js-tilt").tilt();
-        // tilt.on("change", callback); // parameters: event, transforms
-        // tilt.on("tilt.mouseLeave", callback); // parameters: event
-        // tilt.on("tilt.mouseEnter", callback); // parameters: event
-
-        $(".js-tilt").tilt({
-          max: 30,
-          speed: 600,
-          scale: 1,
-          transition: true,
-          // easing: "cubic-bezier(.03,.98,.52,.99)",
-          perspective: 600,
-          // glare: true,
-        });
-      })
-
-
-      // let bg = document.getElementById("std");
-      // let road = document.getElementById("ply");
-
-      // window.addEventListener("scroll", function () {
-      //   var value = window.scrollY;
-      //   // console.log("value", value);
-      //   bg.style.top = value * 0.5 + "px";
-      //   // moon.style.bottom = -value + 10 + "%";
-      //   // moon.style.left = -value + 5 + "%";
-      //   // moon.style.transform = scale(1.2);
-      //   // mountain.style.bottom = -value + 10 + "%";
-      //   road.style.bottom = value * 0.05 + "px";
-      //   // console.log(".bg.style.top", bg.style.top);
-      //   // console.log("moon.style.top", moon.style.top);
-      //   // text.style.top = value * 1 + "px";
-      // });
+  function startCount() {
+      $(".count").each(function () {
+          count($(this));
+      });
+  };
+  $(document).ready(function(){
+    startCount();
+  })
