@@ -239,13 +239,13 @@ $(".h--timeline-date").click(function(){
 $(".maskot__image").click(function(){
   $(".sliderx__help").fadeOut()
 })
-$(".js-tilt").tilt({
-  max: 30,
-  speed: 600,
-  scale: 1,
-  transition: true,
-  perspective: 600,
-});
+// $(".js-tilt").tilt({
+//   max: 30,
+//   speed: 600,
+//   scale: 1,
+//   transition: true,
+//   perspective: 600,
+// });
 function isScrolledIntoView($elem) {
   var docViewTop = $(window).scrollTop();
   var docViewBottom = docViewTop + $(window).height();
