@@ -2004,7 +2004,7 @@ body {
     border-radius: 8px;
     &__img {
       position: relative;
-      height: 200px;
+      // height: 200px;
       .imagesx {
         position: absolute;
         bottom: -16px;
@@ -2017,9 +2017,9 @@ body {
         }
       }
     }
-    h3 {
-      font-size: 2.5rem;
-    }
+    // h3 {
+    //   font-size: 2.5rem;
+    // }
   }
   &:after {
     position: absolute;
