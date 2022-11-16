@@ -1318,6 +1318,9 @@ body {
     width: 640px;
     height: 100%;
     margin: 0 auto;
+    @media screen and (max-width:766px) {
+      width: auto;
+    }
     img {
       width: 100%;
       height: 100%;
