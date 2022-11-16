@@ -2017,9 +2017,13 @@ body {
         }
       }
     }
-    // h3 {
-    //   font-size: 2.5rem;
-    // }
+    h3 {
+      font-size: 2rem;
+      text-shadow: 2px 2px black;
+      @media screen and (max-width:766px) {
+        font-size: 1.2rem;
+      }
+    }
   }
   &:after {
     position: absolute;
