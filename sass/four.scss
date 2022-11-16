@@ -2002,6 +2002,25 @@ body {
     padding: 16px;
     margin-bottom: 8px;
     border-radius: 8px;
+    .alls {
+      display: block;
+      &__left,&__right {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &__left {
+        width: 30%;
+        @media screen and (max-width:766px) {
+          width: 100%;
+        }
+      }
+      &__right {
+        width: 65%;
+        @media screen and (max-width:766px) {
+          width: 100%;
+        }
+      }
+    }
     &__img {
       position: relative;
       // height: 200px;
@@ -2019,7 +2038,7 @@ body {
     }
     h3 {
       font-size: 2rem;
-      text-shadow: 2px 2px black;
+      text-shadow: 1px 1px black;
       @media screen and (max-width:766px) {
         font-size: 1.2rem;
       }
