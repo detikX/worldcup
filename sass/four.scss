@@ -1730,6 +1730,11 @@ body {
   padding-bottom: 64px;
   position: relative;
   z-index: 93;
+  ul {
+    li {
+      margin: 0 !important;
+    }
+  }
   &__all {
     display: block;
     .image {
