@@ -429,7 +429,8 @@
 /* --------------------------------------- */
 .h--timeline-date::after,
 .h--timeline-date::before{
-    background-color:#6e1e46;
+    // background-color:#6e1e46;
+    border-color: #f7f7f7;
 }
 .h--timeline-date--selected::after{
     background-color:#f7f7f7;
